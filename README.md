@@ -3,7 +3,7 @@ scan a TigerCard to check a patron's library permissions
 
 ### Two Programs
 
-##### APIserver
+#### BouncerAPI
 
 - a secure server running within our local network (not available to the internet)
 - accepts a url in the form {url to server}/?id=1234567890123456
@@ -57,7 +57,7 @@ scan a TigerCard to check a patron's library permissions
   - if you add elements to the server json response, be sure to add a matching element to the ActiveStudent.go program
 
 
-##### Client interface
+#### BouncerInterface
 
 - A security guard will have a Windows computer with this program running
 - They will swipe a TigerCard through a connected card reader
