@@ -78,8 +78,9 @@ scan a TigerCard to check a patron's library permissions
   - for example, if you move the APIserver url, you'll need to update the hardcoded server in ActiveCard.go
 
   - install Golang on your computer
-  - cd to this repo directory in your terminal
+  - cd to ./BouncerInterface/ in your terminal
+  - ```go get github.com/gookit/color```
   - edit ActiveCard.go
   - for Windows: ```go build ActiveCard.go```
   - for linux: ```GOOS=windows GOARCH=amd64 go build ActiveCard.go```
-  - the new ActiveCard.exe file is a runnable windows program
+  - the new ActiveCard.exe file in ./BouncerInterface/ is a runnable windows program

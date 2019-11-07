@@ -13,27 +13,38 @@ def login(username, password):
     return s, json.loads(r.text)["sessionToken"]
 
 
-def pick_an_endpoint(user_id, session_token):
-    if len(user_id) == 17:
-        endpoint = f"https://lalu.sirsi.net/lalu_ilsws/rest/patron/lookupPatronInfo?clientID=DS_CLIENT&sessionToken={session_token}&userID={user_id}&includePatronStatusInfo=True&json=True"
-    elif len(user_id) == 9 and user_id[:2] == "89":
-        endpoint = f"https://lalu.sirsi.net/lalu_ilsws/rest/patron/lookupPatronInfo?clientID=DS_CLIENT&sessionToken={session_token}&alternateID={user_id}&includePatronStatusInfo=True&json=True"
+def pick_an_endpoint(userid, session_token):
+    if not userid:
+        endpoint = None
+    elif len(userid) == 17:
+        endpoint = f"https://lalu.sirsi.net/lalu_ilsws/rest/patron/lookupPatronInfo?clientID=DS_CLIENT&sessionToken={session_token}&userID={userid}&includePatronStatusInfo=True&includePatronInfo=True&json=True"
+    elif len(userid) == 9 and userid[:2] == "89":
+        endpoint = f"https://lalu.sirsi.net/lalu_ilsws/rest/patron/lookupPatronInfo?clientID=DS_CLIENT&sessionToken={session_token}&alternateID={userid}&includePatronStatusInfo=True&includePatronInfo=True&json=True"
     else:
-        # user_id isn't an 89 number or a 17-digit account number
+        # userid isn't an 89 number or a 17-digit account number
         endpoint = None
     return endpoint
 
 
-def get_expiration(session, session_token, user_id):
-    endpoint = pick_an_endpoint(user_id, session_token)
-    if not endpoint:
-        return {"expiration": "1900-01-01"}
-    r = session.post(endpoint)
+def parse_response(r):
     try:
         expiration = json.loads(r.text)["patronStatusInfo"]["datePrivilegeExpires"]
     except KeyError:
         expiration = "1900-01-01"
-    return {"expiration": expiration}
+    try:
+        user = json.loads(r.text)["patronInfo"]["displayName"]
+    except KeyError:
+        user = "Unknown user"
+    return {"user": user, "expiration": expiration}
+
+
+def get_userinfo(session, session_token, userid):
+    endpoint = pick_an_endpoint(userid, session_token)
+    if not endpoint:
+        return {"user": "Unknown user", "expiration": "1900-01-01"}
+    print(endpoint)
+    response = session.post(endpoint)
+    return parse_response(response)
 
 
 def parse_secrets():
@@ -46,9 +57,9 @@ def parse_secrets():
 def index():
     username, password = parse_secrets()
     session, session_token = login(username, password)
-    user_id = request.args.get("id")
-    user_info = get_expiration(session, session_token, user_id)
-    return jsonify(user_info)
+    userid = request.args.get("id")
+    userinfo = get_userinfo(session, session_token, userid)
+    return jsonify(userinfo)
 
 
 if __name__ == "__main__":

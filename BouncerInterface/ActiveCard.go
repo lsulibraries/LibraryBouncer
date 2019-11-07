@@ -18,6 +18,7 @@ import (
 
 type userinfo struct {
 	Expiration string `json:"expiration"`
+	Name       string `json:"user"`
 }
 
 func QueryAPI(uid string) userinfo {
@@ -103,9 +104,9 @@ func main() {
 			user := QueryAPI(input)
 			expired := isExpired(user)
 			if expired {
-				printScreen("Not authorized patron: "+input, "not ok")
+				printScreen("Not authorized patron: "+user.Name, "not ok")
 			} else {
-				printScreen("authorized patron: "+input, "ok")
+				printScreen("authorized patron: "+user.Name, "ok")
 			}
 		}
 	}
