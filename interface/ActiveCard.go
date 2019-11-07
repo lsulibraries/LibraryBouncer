@@ -9,7 +9,11 @@ import (
 	"io/ioutil"
 	"net/http"
 	"os"
+	"os/exec"
+	"runtime"
 	"time"
+
+	"github.com/gookit/color"
 )
 
 type userinfo struct {
@@ -22,18 +26,18 @@ func QueryAPI(uid string) userinfo {
 	defer resp.Body.Close()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "fetch: %v\n", err)
-		os.Exit(1)
+		return userinfo{}
 	}
 	b, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "fetch: reading %s: %v\n", url, err)
-		os.Exit(1)
+		return userinfo{}
 	}
 	user := userinfo{}
 	jsonErr := json.Unmarshal(b, &user)
 	if jsonErr != nil {
 		fmt.Println(jsonErr)
-		os.Exit(1)
+		return userinfo{}
 	}
 	return user
 }
@@ -42,7 +46,7 @@ func isExpired(user userinfo) bool {
 	exp, err := time.Parse("2006-01-02", user.Expiration)
 	if err != nil {
 		fmt.Println(err)
-		os.Exit(1)
+		return true
 	}
 	if exp.After(time.Now()) {
 		return false
@@ -59,17 +63,49 @@ func scanStdin() string {
 	return ""
 }
 
+func Clear() {
+	var c *exec.Cmd
+	var doClear = true
+	switch runtime.GOOS {
+	case "darwin":
+	case "linux":
+		c = exec.Command("clear")
+	case "windows":
+		c = exec.Command("cmd", "/c", "cls")
+	default:
+		doClear = false
+	}
+	if doClear {
+		c.Stdout = os.Stdout
+		c.Run()
+	}
+}
+
+func printScreen(info string, status string) {
+	Clear()
+	color.Yellow.Println("\n*********************")
+	color.Yellow.Println("Welcome to ActiveCard")
+	color.Yellow.Println("*********************")
+	color.Cyan.Println("\nScan a Tigercard, we'll check if the account is active.")
+	color.Gray.Println("\n(If you lose connection, try clicking on this display window and rescanning.)")
+	if status == "ok" {
+		color.Cyan.Printf("\n%s\n", info)
+	} else if status == "not ok" {
+		color.Red.Printf("\n%s\n", info)
+	}
+}
+
 func main() {
-	fmt.Println("\n*********************\nWelcome to ActiveCard\n*********************\n\nScan a Tigercard, we'll check if the account is active.\n\n(If you lose connection, try clicking on this display window and rescanning.)\n\n")
+	printScreen("", "none")
 	for {
 		input := scanStdin()
 		if input != "" {
 			user := QueryAPI(input)
 			expired := isExpired(user)
 			if expired {
-				fmt.Println("Not authorized patron")
+				printScreen("Not authorized patron: "+input, "not ok")
 			} else {
-				fmt.Println("authorized patron")
+				printScreen("authorized patron: "+input, "ok")
 			}
 		}
 	}
