@@ -1,0 +1,33 @@
+version: "3.7"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: FlaskDockerfile
+    container_name: LibraryBouncerApp
+    command: gunicorn -w 3 -b :8000 app
+    volumes:
+      - ./app.py:/code/app.py
+    networks:
+      - network
+    restart:
+      always
+
+  nginx:
+    image: nginx:latest
+    container_name: LibraryBouncerNginx
+    volumes:
+      - ./config/nginx/conf.d:/etc/nginx/conf.d
+    ports:
+      - 8000:80
+    depends_on:
+      - app
+    networks:
+      - network
+    restart:
+      always
+
+networks:
+  network:
+    driver: bridge
