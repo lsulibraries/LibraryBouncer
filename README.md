@@ -13,20 +13,18 @@ scan a TigerCard to check a patron's library permissions
 
 - returns a json response with that person's Symphony expiration date
 
-  - {"expiration": "yyyy-mm-dd"}
-  - gives "1900-01-01" for id's not found in Symphony
+  - {"user": "Last, First Middle", "expiration": "yyyy-mm-dd"}
 
-- reasoning:
+- big picture:
 
   - The challenge is to log in and gather info from the Symphony server
-  - but the Symphony login passwords and other private info must be protected.
-  - If we store those secrets on a public computer, then a bad actor can hack our Symphony database. (bad)
-  - So we run a server hidden in the bowels of the library IT stack
-  - that stores the secrets in a safe place
-  - and only shares to the world info that is not secret.
-  - By 'not secret info' I mean account expiration date.
-  - So, while the server is accessible to anyone inside the lsu network, it only returns info we are comfortable sharing to everyone (including bad actors).
-  - Later we will talk about the interface program that queries this server.
+  - while protecting the Symphony login passwords and other secrets.
+  - If we store those secrets on a public computer, then a bad actor can hack our Symphony database.
+  - So we create a tiny server within the library IT stack
+  - that stores the secrets in a safe place and
+  - only shares to the world info that is not secret.
+  - So, while the server's port is accessible to anyone inside the lsu network, it only returns info we are comfortable sharing to everyone (including bad actors).
+  - Later we will talk about an interface program that queries this server.
 
 - to build:
 
@@ -73,7 +71,7 @@ scan a TigerCard to check a patron's library permissions
   - See the command prompt window that open
   - Keep this window "in focus" when scanning a card
 
-- to edit and recreate the program from the source code:
+- to edit then build the executable from the source code:
 
   - for example, if you move the APIserver url, you'll need to update the hardcoded server in ActiveCard.go
 
@@ -83,4 +81,4 @@ scan a TigerCard to check a patron's library permissions
   - edit ActiveCard.go
   - for Windows: ```go build ActiveCard.go```
   - for linux: ```GOOS=windows GOARCH=amd64 go build ActiveCard.go```
-  - the new ActiveCard.exe file in ./BouncerInterface/ is a runnable windows program
+  - the new ActiveCard.exe file in ./BouncerInterface/ is a windows executable.
