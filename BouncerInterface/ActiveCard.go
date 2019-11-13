@@ -19,6 +19,7 @@ import (
 type userinfo struct {
 	Expiration string `json:"expiration"`
 	Name       string `json:"user"`
+	Dept       string `json:department`
 }
 
 func QueryAPI(uid string) userinfo {

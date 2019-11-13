@@ -31,7 +31,9 @@ def login(username, password):
 def get_userinfo(session, session_token, userid):
     endpoint = pick_an_endpoint(userid, session_token)
     if not endpoint:
-        return {"user": "Unknown user", "expiration": "1900-01-01"}
+        parsed = {"user": "Unknown User", "expiration": "1900-01-01", "department": "Unknown Dept"}
+        log_access(parsed)
+        return parsed
     response = session.post(endpoint)
     parsed = parse_response(response)
     log_access(parsed)
@@ -46,30 +48,29 @@ def pick_an_endpoint(userid, session_token):
     elif len(userid) == 9 and userid[:2] == "89":
         endpoint = f"https://lalu.sirsi.net/lalu_ilsws/rest/patron/lookupPatronInfo?clientID=DS_CLIENT&sessionToken={session_token}&alternateID={userid}&includePatronStatusInfo=True&includePatronInfo=True&json=True"
     else:
-        # if userid isn't an 89 number or a 17-digit account number
+        # if userid is neither an 89 number nor a 17-digit account number
         endpoint = None
     return endpoint
 
 
 def parse_response(r):
-    try:
-        expiration = json.loads(r.text)["patronStatusInfo"]["datePrivilegeExpires"]
-    except KeyError:
-        expiration = "1900-01-01"
-    try:
-        user = json.loads(r.text)["patronInfo"]["displayName"]
-    except KeyError:
-        user = "Unknown user"
-    return {"user": user, "expiration": expiration}
+    info = json.loads(r.text)
+    # first .get() returns empty dict if key not found
+    # second .get() returns descriptive text for each missing type
+    exp = info.get("patronStatusInfo", dict()).get("datePrivilegeExpires", "Unknown Dept")
+    user = info.get("patronInfo", dict()).get("displayName", "Unknown User")
+    dept = info.get("patronInfo", dict()).get("department", "1900-01-01")
+    return {"user": user, "expiration": exp, "department": dept}
 
 
 def log_access(parsed):
-    user_exp = datetime.strptime(parsed["expiration"], "%Y-%m-%d")
+    exp = datetime.strptime(parsed["expiration"], "%Y-%m-%d")
     now = datetime.now()
-    if now > user_exp:
-        logging.info("Denied")
+    dept = parsed["department"]
+    if now > exp:
+        logging.info(f"Denied ----- {dept}")
     else:
-        logging.info("Allowed")
+        logging.info(f"Allowed ----- {dept}")
 
 
 @application.route("/")
@@ -87,8 +88,8 @@ def stats():
         lines = [line for line in f.read().split('\n') if line]
     stats = []
     for line in lines:
-        t, s = line.split(" ----- ")
-        stats.append({"time": t, "success": s})
+        t, s, d = line.split(" ----- ")
+        stats.append({"time": t, "success": s, "department": d})
     return jsonify(stats)
 
 
