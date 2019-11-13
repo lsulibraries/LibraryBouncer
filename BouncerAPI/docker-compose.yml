@@ -8,7 +8,7 @@ services:
     container_name: LibraryBouncerApp
     command: gunicorn -w 3 -b :8000 app
     volumes:
-      - ./app.py:/code/app.py
+      - ./access_stats.txt:/code/access_stats.txt
     networks:
       - network
     restart:

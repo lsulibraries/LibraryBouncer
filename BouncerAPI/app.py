@@ -31,7 +31,11 @@ def login(username, password):
 def get_userinfo(session, session_token, userid):
     endpoint = pick_an_endpoint(userid, session_token)
     if not endpoint:
-        parsed = {"user": "Unknown User", "expiration": "1900-01-01", "department": "Unknown Dept"}
+        parsed = {
+            "user": "Unknown User",
+            "expiration": "1900-01-01",
+            "department": "Unknown Dept",
+        }
         log_access(parsed)
         return parsed
     response = session.post(endpoint)
@@ -57,7 +61,9 @@ def parse_response(r):
     info = json.loads(r.text)
     # first .get() returns empty dict if key not found
     # second .get() returns descriptive text for each missing type
-    exp = info.get("patronStatusInfo", dict()).get("datePrivilegeExpires", "Unknown Dept")
+    exp = info.get("patronStatusInfo", dict()).get(
+        "datePrivilegeExpires", "Unknown Dept"
+    )
     user = info.get("patronInfo", dict()).get("displayName", "Unknown User")
     dept = info.get("patronInfo", dict()).get("department", "1900-01-01")
     return {"user": user, "expiration": exp, "department": dept}
@@ -85,7 +91,7 @@ def index():
 @application.route("/stats/")
 def stats():
     with open("access_stats.txt", "r") as f:
-        lines = [line for line in f.read().split('\n') if line]
+        lines = [line for line in f.read().split("\n") if line]
     stats = []
     for line in lines:
         t, s, d = line.split(" ----- ")
