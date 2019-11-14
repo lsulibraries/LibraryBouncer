@@ -1,7 +1,7 @@
 #! usr/env/python3
 
 import logging
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from flask import Flask, json, request, render_template, jsonify
 import requests
@@ -11,6 +11,7 @@ application = Flask(__name__)
 logging.basicConfig(
     filename="access_stats.txt",
     level=logging.INFO,
+    datefmt="%Y-%m-%d %H:%M:%S",
     format="%(asctime)s ----- %(message)s",
 )
 
@@ -61,15 +62,15 @@ def parse_response(r):
     info = json.loads(r.text)
     # first .get() returns empty dict if key not found
     # second .get() returns descriptive text for each missing type
-    exp = info.get("patronStatusInfo", dict()).get(
-        "datePrivilegeExpires", "Unknown Dept"
-    )
+    exp = info.get("patronStatusInfo", dict()).get("datePrivilegeExpires", "1900-01-01")
     user = info.get("patronInfo", dict()).get("displayName", "Unknown User")
-    dept = info.get("patronInfo", dict()).get("department", "1900-01-01")
+    dept = info.get("patronInfo", dict()).get("department", "Unknown Dept")
     return {"user": user, "expiration": exp, "department": dept}
 
 
 def log_access(parsed):
+    if is_repeat(parsed):
+        return
     exp = datetime.strptime(parsed["expiration"], "%Y-%m-%d")
     now = datetime.now()
     dept = parsed["department"]
@@ -77,6 +78,28 @@ def log_access(parsed):
         logging.info(f"Denied ----- {dept}")
     else:
         logging.info(f"Allowed ----- {dept}")
+
+
+recent_hits = list()
+
+
+def is_repeat(parsed):
+    is_match = False
+    parsed["now"] = datetime.now()
+    global recent_hits
+    olds = [
+        i
+        for i in recent_hits
+        if i.get("now") + timedelta(minutes=15) < datetime.now()
+    ]
+    for i in olds:
+        recent_hits.remove(i)
+    for i in recent_hits:
+        if (i["user"], i["department"]) == (parsed["user"], parsed["department"]):
+            is_match = True
+            break
+    recent_hits.append(parsed)
+    return is_match
 
 
 @application.route("/")
