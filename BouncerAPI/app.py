@@ -108,7 +108,8 @@ def index():
     session, session_token = login(username, password)
     userid = request.args.get("id")
     userinfo = get_userinfo(session, session_token, userid)
-    return jsonify(userinfo)
+    displayed_userinfo = {"expiration": userinfo["expiration"]}
+    return jsonify(displayed_userinfo)
 
 
 @application.route("/stats/")
@@ -117,8 +118,11 @@ def stats():
         lines = [line for line in f.read().split("\n") if line]
     stats = []
     for line in lines:
-        t, s, d = line.split(" ----- ")
-        stats.append({"time": t, "success": s, "department": d})
+        try:
+            t, s, d = line.split(" ----- ")
+            stats.append({"time": t, "success": s, "department": d})
+        except ValueError:  # python errors are leaking into the access_stats.txt log
+            continue
     return jsonify(stats)
 
 

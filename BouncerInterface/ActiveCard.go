@@ -18,12 +18,12 @@ import (
 
 type userinfo struct {
 	Expiration string `json:"expiration"`
-	Name       string `json:"user"`
-	Dept       string `json:department`
+	// Name       string `json:"user"`
+	// Dept       string `json:"department"`
 }
 
 func QueryAPI(uid string) userinfo {
-	url := "http://localhost:8000/?id=" + uid
+	url := "http://130.39.63.207:8000/?id=" + uid
 	resp, err := http.Get(url)
 	defer resp.Body.Close()
 	if err != nil {
@@ -105,9 +105,9 @@ func main() {
 			user := QueryAPI(input)
 			expired := isExpired(user)
 			if expired {
-				printScreen("Not authorized patron: "+user.Name, "not ok")
+				printScreen("Not authorized patron", "not ok")
 			} else {
-				printScreen("authorized patron: "+user.Name, "ok")
+				printScreen("authorized patron", "ok")
 			}
 		}
 	}
