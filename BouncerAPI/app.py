@@ -60,8 +60,8 @@ def pick_an_endpoint(userid, session_token):
 
 def parse_response(r):
     info = json.loads(r.text)
-    # first .get() returns empty dict if key not found
-    # second .get() returns descriptive text for each missing type
+    # the first .get() returns empty dict if key not found
+    # the second .get() returns descriptive text for each missing type
     exp = info.get("patronStatusInfo", dict()).get("datePrivilegeExpires", "1900-01-01")
     user = info.get("patronInfo", dict()).get("displayName", "Unknown User")
     dept = info.get("patronInfo", dict()).get("department", "Unknown Dept")
@@ -110,20 +110,6 @@ def index():
     userinfo = get_userinfo(session, session_token, userid)
     displayed_userinfo = {"expiration": userinfo["expiration"]}
     return jsonify(displayed_userinfo)
-
-
-@application.route("/stats/")
-def stats():
-    with open("access_stats.txt", "r") as f:
-        lines = [line for line in f.read().split("\n") if line]
-    stats = []
-    for line in lines:
-        try:
-            t, s, d = line.split(" ----- ")
-            stats.append({"time": t, "success": s, "department": d})
-        except ValueError:  # python errors are leaking into the access_stats.txt log
-            continue
-    return jsonify(stats)
 
 
 if __name__ == "__main__":

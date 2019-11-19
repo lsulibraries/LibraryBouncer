@@ -23,20 +23,20 @@ type userinfo struct {
 func QueryAPI(uid string) userinfo {
 	url := "http://130.39.63.207:8000/?id=" + uid
 	resp, err := http.Get(url)
-	defer resp.Body.Close()
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "fetch: %v\n", err)
+		fmt.Fprintf(os.Stderr, "ActiveCard error reaching %s: %v\n", url, err)
 		return userinfo{}
 	}
+	defer resp.Body.Close()
 	b, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "fetch: reading %s: %v\n", url, err)
+		fmt.Fprintf(os.Stderr, "ActiveCard error reading %s: %v\n", url, err)
 		return userinfo{}
 	}
 	user := userinfo{}
 	jsonErr := json.Unmarshal(b, &user)
 	if jsonErr != nil {
-		fmt.Println(jsonErr)
+		fmt.Fprintf(os.Stderr, "ActiveCard error parsing json: %v\n", jsonErr)
 		return userinfo{}
 	}
 	return user
@@ -45,7 +45,7 @@ func QueryAPI(uid string) userinfo {
 func isExpired(user userinfo) bool {
 	exp, err := time.Parse("2006-01-02", user.Expiration)
 	if err != nil {
-		fmt.Println(err)
+		fmt.Fprintf(os.Stderr, "ActiveCard error parsing time: %v\n", err)
 		return true
 	}
 	if exp.After(time.Now()) {
@@ -67,7 +67,6 @@ func Clear() {
 	var c *exec.Cmd
 	var doClear = true
 	switch runtime.GOOS {
-	case "darwin":
 	case "linux":
 		c = exec.Command("clear")
 	case "windows":
@@ -99,14 +98,15 @@ func main() {
 	printScreen("", "none")
 	for {
 		input := scanStdin()
-		if input != "" {
-			user := QueryAPI(input)
-			expired := isExpired(user)
-			if expired {
-				printScreen("Not authorized patron", "not ok")
-			} else {
-				printScreen("authorized patron", "ok")
-			}
+		if input == "" {
+			continue
+		}
+		user := QueryAPI(input)
+		expired := isExpired(user)
+		if expired {
+			printScreen("Not authorized patron", "not ok")
+		} else {
+			printScreen("authorized patron", "ok")
 		}
 	}
 }
