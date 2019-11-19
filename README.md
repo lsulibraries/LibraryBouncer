@@ -13,7 +13,7 @@ scan a TigerCard to check a patron's library permissions
 
 - returns a json response with that person's Symphony expiration date
 
-  - {"user": "Last, First Middle", "expiration": "yyyy-mm-dd"}
+  - {"expiration": "yyyy-mm-dd"}
 
 - big picture:
 
