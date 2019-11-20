@@ -5,7 +5,7 @@ Production server setup:
   - sudo pip3 install flask requests
 
   - create this folder tree:
-
+```
 /var/www/ActiveCard/
   -rw--------. garmstrong apache   user_pass.json
   drwrxr-xr-x. garmstrong apache   app/
@@ -14,9 +14,9 @@ Production server setup:
   -rw-rw-r--. garmstrong apache    access_stats.json
   -rw-rw-r--. garmstrong apache    app.py
   -rw-rw-r--. garmstrong apache    wsgi.py
+```
 
-
-/var/www/ActiveCard/app/wsgi.py
+create file /var/www/ActiveCard/app/wsgi.py
 
 ```
 #! /usr/bin/python3
@@ -28,7 +28,7 @@ if __name__ == "__main__":
 ```
 
 
-/var/httpd/conf.d/activecard.conf :
+create file /var/httpd/conf.d/activecard.conf
 ```
   <VirtualHost *>
     ServerName libguardshack.lsu.edu
