@@ -31,6 +31,7 @@ scan a TigerCard to check a patron's library permissions
   - follow the instructions at gnatty repo to install docker and github
   - clone this github repository
   - cd into the APIserver directory
+  - touch a file named "access_stats.json"  (this is a necessary hack)
   - create a file named "user_pass.json"
 
     - with the text {"user": "JoeShmoe", "password": "MyOfficeIsARiver"}
