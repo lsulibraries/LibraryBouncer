@@ -9,7 +9,6 @@ scan a TigerCard to check a patron's library permissions
 - accepts a url in the form {url to server}/?id=1234567890123456
 
   - where the number is a Tigercard id
-  - or an 89 number
 
 - returns a json response with that person's Symphony expiration date
 
@@ -23,6 +22,7 @@ scan a TigerCard to check a patron's library permissions
   - So we create a tiny server within the library IT stack
   - that stores the secrets in a safe place and
   - only shares to the world info that is not secret.
+  - specifically, it publicly shares only whether a given library userid is expired.  
   - So, while the server's port is accessible to anyone inside the lsu network, it only returns info we are comfortable sharing to everyone (including bad actors).
   - Later we will talk about an interface program that queries this server.
 
