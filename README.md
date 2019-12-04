@@ -14,6 +14,11 @@ scan a TigerCard to check a patron's library permissions
 
   - {"expiration": "yyyy-mm-dd"}
 
+- logs
+
+  - only non-personally identifiable info
+  - ./BouncerAPI/access_stats.txt
+
 - big picture:
 
   - The challenge is to log in and gather info from the Symphony server
@@ -26,13 +31,22 @@ scan a TigerCard to check a patron's library permissions
   - So, while the server's port is accessible to anyone inside the lsu network, it only returns info we are comfortable sharing to everyone (including bad actors).
   - Later we will talk about an interface program that queries this server.
 
-- to build:
+- what is the server:
+
+  - the entire server is coded in the app.py file.
+  - it's a very minimal Flask server (python3)
+  - it responds to the ActiveCard.exe program only {"expiration": "some date info"} for that individual.
+  - be careful if you add elements to the server json response, because they must match the structure found in the BouncerInterface.
+  - the internal logs hold richer data.  During this logging, it temporarily knows the individual's id, in order to look up Degree/School/College.  After the lookup, it forgets all identifiably info.
+  - these logs can be parsed to make sense of the who uses the library at different times.  (As of date, the requirements of this parser are unspecified.)
+
+- to build a dev instance:
 
   - follow the instructions at gnatty repo to install docker and github
   - clone this github repository
   - cd into the APIserver directory
-  - touch a file named "access_stats.json"  (this is a necessary hack)
-  - create a file named "user_pass.json"
+  - touch a file at ./BouncerAPI/access_stats.txt  (making this empty file is a necessary hack)
+  - create a file at ./BouncerAPI/user_pass.json
 
     - with the text {"user": "JoeShmoe", "password": "MyOfficeIsARiver"}
     - where that user/password can log into Symphony to access Patron info
@@ -41,19 +55,19 @@ scan a TigerCard to check a patron's library permissions
   - the webserver will be available at url {local machine url}:8000
   - in the docker-compose.yml file is a line "ports: 8000:80" where 8000 is the outside visible port and 80 is the port inside the container
 
-- to secure:
+- to build a production instance:
 
-  - after build, Delete the user_pass.json file
-  - the docker server will remember the Symphony user/pass
-  - you may start and stop the API server with ```docker-compose up -d``` and ```docker-compose stop```
-  - though it will stay up & restart on failure, until you ```docker-compose stop```
-  - ```docker-compose down``` will kill the containers and wipe the user/pass
-
-- to revise the server:
-
-  - the entire server is coded in the app.py file.
-  - it's a very minimal Flask server (python3)
-  - if you add elements to the server json response, be sure to add a matching element to the ActiveStudent.go program
+  - with CentOS8
+  - sudo yum install httpd python3 mod_wsgi
+  - sudo pip3 install flask requests
+  - cd /var/www/
+  - sudo git clone https://github.com/lsulibraries/LibraryBouncer
+  - copy or symlink ./BouncerAPI/librarybouncer.conf to /etc/https/conf.d/
+  - create the same file at ./BouncerAPI/user_pass.json with permissions -rw-------
+  - create the same file at ./BouncerAPI/access_stats.txt
+  - sudo chown -R garmstrong:apache /var/www/LibraryBouncer
+  - disable selinux unless you want to figure out that madness
+  - look in the apache logs & the access_stats.txt for error messages
 
 
 #### BouncerInterface
