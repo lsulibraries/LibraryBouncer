@@ -92,7 +92,7 @@
   "VED":
   {
     "College": "Agriculture",
-    "Department": "Human Resource Education & Workforce \nDevelopment",
+    "Department": "Human Resource Education & Workforce  Development",
     "CIP Codes": "131201",
     "Curriculum/Major": "Vocational Education",
     "Curriculum Code": "VED",
@@ -119,7 +119,7 @@
   "AGEE":
   {
     "College": "Agriculture",
-    "Department": "Agricultural & Extension Education & \nEvaluation",
+    "Department": "Agricultural & Extension Education &  Evaluation",
     "CIP Codes": "10801",
     "Curriculum/Major": "Agriculture and Extension Education",
     "Curriculum Code": "AGEE",
@@ -146,7 +146,7 @@
   "FDSYS":
   {
     "College": "Agriculture",
-    "Department": "School of Plant, Environmental, and Soil \nSciences",
+    "Department": "School of Plant, Environmental, and Soil  Sciences",
     "CIP Codes": "11001",
     "Curriculum/Major": "Food Systems",
     "Curriculum Code": "FDSYS",
@@ -283,7 +283,7 @@
     "College": "Art & Design",
     "Department": "Nondegree",
     "CIP Codes": "40601",
-    "Curriculum/Major": "Architecture\nDesign-Undecided",
+    "Curriculum/Major": "Architecture Design-Undecided",
     "Curriculum Code": "DESUN",
     "Degree": ""
   },
@@ -335,9 +335,9 @@
   "ISDS":
   {
     "College": "Business",
-    "Department": "Entrepreneurship & \nInformation Systems",
+    "Department": "Entrepreneurship & Information Systems",
     "CIP Codes": "521301",
-    "Curriculum/Major": "Information Systems and Decision \nSciences",
+    "Curriculum/Major": "Information Systems and Decision Sciences",
     "Curriculum Code": "ISDS",
     "Degree": "B.S."
   },
@@ -355,7 +355,7 @@
     "College": "Business",
     "Department": "Entrepreneurship & Information Systems",
     "CIP Codes": "521301",
-    "Curriculum/Major": "Systems \nISDS-Operations Management",
+    "Curriculum/Major": "Systems ISDS-Operations Management",
     "Curriculum Code": "ISOM",
     "Degree": "B.S."
   },
@@ -406,26 +406,26 @@
   },
   "CES":
   {
-    "College": "Coast & \nEnvironment",
+    "College": "Coast & Environment",
     "Department": "Interdepartmental",
     "CIP Codes": "400607",
-    "Curriculum/Major": "Coastal Environmental \nScience",
+    "Curriculum/Major": "Coastal Environmental Science",
     "Curriculum Code": "CES",
-    "Degree": "B.S. in Coastal \nEnvironm. Science"
+    "Degree": "B.S. in Coastal Environm. Science"
   },
-  "Code\nBE":
+  "BE":
   {
     "College": "Engineering",
     "Department": "Biological & Agricultural Engineering",
-    "CIP Codes": "Codes\n140501",
+    "CIP Codes": "140501",
     "Curriculum/Major": "Biological Engineering",
-    "Curriculum Code": "Code\nBE",
+    "Curriculum Code": "BE",
     "Degree": "B.S.B.E."
   },
   "CHE":
   {
     "College": "Engineering",
-    "Department": "Chemical Engineering Gordon A & Mary \nCain",
+    "Department": "Chemical Engineering Gordon A & Mary Cain",
     "CIP Codes": "140701",
     "Curriculum/Major": "Chemical Engineering",
     "Curriculum Code": "CHE",
@@ -461,7 +461,7 @@
   "CSC":
   {
     "College": "Engineering",
-    "Department": "Electrical Engineering and Computer \nScience (School of)",
+    "Department": "Electrical Engineering and Computer Science (School of)",
     "CIP Codes": "110701",
     "Curriculum/Major": "Computer Science",
     "Curriculum Code": "CSC",
@@ -541,7 +541,7 @@
   },
   "SEART":
   {
-    "College": "Human Sciences \nand Education",
+    "College": "Human Sciences and Education",
     "Department": "Education (School of)",
     "CIP Codes": "131302 Art Education (K-12)",
     "Curriculum/Major": "Summer Ent. Prog.- H.S.",
@@ -589,7 +589,7 @@
     "College": "Human Sciences and Education",
     "Department": "Educational Theory, Policy, and Practice",
     "CIP Codes": "131205",
-    "Curriculum/Major": "Elementary Education- Holmes (Holmes students will be tracked by \nconcentration code)",
+    "Curriculum/Major": "Elementary Education- Holmes (Holmes students will be tracked by concentration code)",
     "Curriculum Code": "ELEDH",
     "Degree": ""
   },
@@ -598,14 +598,14 @@
     "College": "Human Sciences and Education",
     "Department": "Educational Theory, Policy, and Practice",
     "CIP Codes": "131205",
-    "Curriculum/Major": "Elementary Education- LSUA (Formerly an internal tracking device \nfor students at LSUA)",
+    "Curriculum/Major": "Elementary Education- LSUA (Formerly an internal tracking device for students at LSUA)",
     "Curriculum Code": "EGED",
     "Degree": ""
   },
   "HRE":
   {
     "College": "Human Sciences and Education",
-    "Department": "Human Resource Education & Workforce \nDevelopment",
+    "Department": "Human Resource Education & Workforce Development",
     "CIP Codes": "131201",
     "Curriculum/Major": "Human Resource Education",
     "Curriculum Code": "HRE",
@@ -676,7 +676,7 @@
   },
   "ECONA":
   {
-    "College": "Humanities \n& Social \nSciences",
+    "College": "Humanities & Social Sciences",
     "Department": "Intercollegiate",
     "CIP Codes": "450601",
     "Curriculum/Major": "Economics",
@@ -910,8 +910,8 @@
   },
   "MC":
   {
-    "College": "Mass \nCommunication",
-    "Department": "Mass \nCommunication",
+    "College": "Mass Communication",
+    "Department": "Mass Communication",
     "CIP Codes": "90102",
     "Curriculum/Major": "Mass Communication",
     "Curriculum Code": "MC",
@@ -919,7 +919,7 @@
   },
   "MUSIC":
   {
-    "College": "Music & \nDramatic Arts",
+    "College": "Music & Dramatic Arts",
     "Department": "School of Music",
     "CIP Codes": "500903",
     "Curriculum/Major": "Music",
@@ -962,13 +962,13 @@
     "Curriculum Code": "PRMUS",
     "Degree": ""
   },
-  "m Code\nBCH":
+  "BCH":
   {
     "College": "Science",
     "Department": "Biological Sciences",
-    "CIP Codes": "Codes\n260202",
+    "CIP Codes": "260202",
     "Curriculum/Major": "Biochemistry",
-    "Curriculum Code": "m Code\nBCH",
+    "Curriculum Code": "BCH",
     "Degree": "B.S."
   },
   "BIOL":
@@ -1549,7 +1549,7 @@
   },
   "APA":
   {
-    "College": "Miscellaneous \nPrograms",
+    "College": "Miscellaneous Programs",
     "Department": "Non-Degree",
     "CIP Codes": "511199",
     "Curriculum/Major": "Academic Programs Abroad",
@@ -1664,7 +1664,7 @@
   {
     "Department": "Veterinary Medicine-Interdepartmental Program",
     "CIP Codes": "512501",
-    "Curriculum/Major": "Comparative Biomedical Sciences\nBiomedical and Veterinary Medical Sciences*-",
+    "Curriculum/Major": "Comparative Biomedical Sciences Biomedical and Veterinary Medical Sciences*-",
     "Curriculum Code": "SVMPB",
     "Degree": "M.S."
   },
@@ -1672,7 +1672,7 @@
   {
     "Department": "Veterinary Medicine-Interdepartmental Program",
     "CIP Codes": "512501",
-    "Curriculum/Major": "Pathobiological Sciences\nBiomedical and Veterinary Medical Sciences*-Veterinary",
+    "Curriculum/Major": "Pathobiological Sciences Biomedical and Veterinary Medical Sciences*-Veterinary",
     "Curriculum Code": "SVMCS",
     "Degree": "M.S."
   },
@@ -1680,7 +1680,7 @@
   {
     "Department": "Veterinary Medicine-Interdepartmental Program",
     "CIP Codes": "512501",
-    "Curriculum/Major": "Clinical Sciences*\nVeterinary Medical Sciences Epidemiology & Community",
+    "Curriculum/Major": "Clinical Sciences* Veterinary Medical Sciences Epidemiology & Community",
     "Curriculum Code": "SVMEC",
     "Degree": "M.S."
   },
@@ -1688,7 +1688,7 @@
   {
     "Department": "Veterinary Medicine-Interdepartmental Program",
     "CIP Codes": "512501",
-    "Curriculum/Major": "Health\nVeterinary Anatomy & Cell Biology",
+    "Curriculum/Major": "Health Veterinary Anatomy & Cell Biology",
     "Curriculum Code": "SVMAN",
     "Degree": "M.S."
   },
@@ -1728,7 +1728,7 @@
   {
     "Department": "Veterinary Medicine-Interdepartmental Program",
     "CIP Codes": "512401",
-    "Curriculum/Major": "Comparative Biomedical Sciences\nBiomedical and Veterinary Medical Sciences*-",
+    "Curriculum/Major": "Comparative Biomedical Sciences Biomedical and Veterinary Medical Sciences*-",
     "Curriculum Code": "PVMPB",
     "Degree": "Ph.D."
   },
@@ -1736,7 +1736,7 @@
   {
     "Department": "Veterinary Medicine-Interdepartmental Program",
     "CIP Codes": "512401",
-    "Curriculum/Major": "Pathobiological Sciences\nBiomedical and Veterinary Medical Sciences* -Veterinary",
+    "Curriculum/Major": "Pathobiological Sciences Biomedical and Veterinary Medical Sciences* -Veterinary",
     "Curriculum Code": "PVMCS",
     "Degree": "Ph.D."
   },
@@ -1744,7 +1744,7 @@
   {
     "Department": "Veterinary Medicine-Interdepartmental Program",
     "CIP Codes": "512401",
-    "Curriculum/Major": "Clinical Sciences\nVeterinary Medical Sciences*- Epidemiology &",
+    "Curriculum/Major": "Clinical Sciences Veterinary Medical Sciences*- Epidemiology &",
     "Curriculum Code": "PVMEC",
     "Degree": "Ph.D."
   },
@@ -1752,7 +1752,7 @@
   {
     "Department": "Veterinary Medicine-Interdepartmental Program",
     "CIP Codes": "512401",
-    "Curriculum/Major": "Community Health\nVeterinary Anatomy & Cell Biology",
+    "Curriculum/Major": "Community Health Veterinary Anatomy & Cell Biology",
     "Curriculum Code": "PVMAN",
     "Degree": "Ph.D."
   },
@@ -1784,7 +1784,7 @@
   {
     "Department": "Veterinary Medicine-Interdepartmental Program",
     "CIP Codes": "512401",
-    "Curriculum/Major": "degree. Individual codes have been created solely to track \nVeterinary Medicine",
+    "Curriculum/Major": "degree. Individual codes have been created solely to track  Veterinary Medicine",
     "Curriculum Code": "VMED",
     "Degree": "D.V.M."
   },
@@ -2120,7 +2120,7 @@
   {
     "Department": "Business Administration",
     "CIP Codes": "520201",
-    "Curriculum/Major": "Sciences \nBusiness Administration-Management",
+    "Curriculum/Major": "Sciences  Business Administration-Management",
     "Curriculum Code": "PBAMG",
     "Degree": "Ph.D."
   },
@@ -2340,12 +2340,12 @@
     "Curriculum Code": "ECIEL",
     "Degree": "M.Ed."
   },
-  "ECISE\nEELRC":
+  "EELRC":
   {
     "Department": "School of Education",
     "CIP Codes": "130101",
     "Curriculum/Major": "Education",
-    "Curriculum Code": "ECISE\nEELRC",
+    "Curriculum Code": "EELRC",
     "Degree": "M.Ed."
   },
   "ELDR":

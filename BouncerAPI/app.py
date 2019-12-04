@@ -80,9 +80,26 @@ def enrich(parsed):
     additional = DEGREE_ATTRIBUTES.get(parsed['Curriculum Code'])
     if additional:
         parsed.update(additional)
+        # grad school & professional schools have no "College" in the reference DegreeAttributes.json
+        # we give them a generic "Graduate or Professional" value for College
         if "College" not in parsed:
             parsed["College"] = "Graduate or Professional"
-    return parsed
+        return parsed
+    else:
+        defaults = {
+            "College": "Unknown College",
+            "Department": "Unknown Dept",
+            "CIP Codes": "Unknown CIP Code",
+            "Curriculum/Major": "Unknown Major",
+            "Curriculum Code": "Unknown Curriculum Code",
+            "Degree": "Unknown Degree",
+            "Expiration": "1900-01-01",
+            "user": "Unknown User",
+        }
+        for k, v in defaults.items():
+            if k not in parsed:
+                parsed[k] = v
+        return parsed
 
 
 def log_access(parsed):
