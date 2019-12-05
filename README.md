@@ -33,10 +33,10 @@ scan a TigerCard to check a patron's library permissions
 
 - what is the server:
 
-  - the entire server is coded in the app.py file.
-  - it's a very minimal Flask server (python3)
-  - it responds to the ActiveCard.exe program only {"expiration": "some date info"} for that individual.
-  - be careful if you add elements to the server json response, because they must match the structure found in the BouncerInterface.
+  - the entire webapp is coded in the app.py file.
+  - it's a very minimal Apache/mod_wsgi/flask server
+  - it accepts a request with an ?id= value, and return a response: {"expiration": "some date info"}.
+  - BouncerInterface requires this exact json response, so be careful if you modify the server's json response.
   - the internal logs hold richer data.  During this logging, it temporarily knows the individual's id, in order to look up Degree/School/College.  After the lookup, it forgets all identifiably info.
   - these logs can be parsed to make sense of the who uses the library at different times.  (As of date, the requirements of this parser are unspecified.)
 
@@ -46,10 +46,7 @@ scan a TigerCard to check a patron's library permissions
   - clone this github repository
   - cd into the APIserver directory
   - touch a file at ./BouncerAPI/access_stats.txt  (making this empty file is a necessary hack)
-  - create a file at ./BouncerAPI/user_pass.json
-
-    - with the text {"user": "JoeShmoe", "password": "MyOfficeIsARiver"}
-    - where that user/password can log into Symphony to access Patron info
+  - create a file at ./BouncerAPI/user_pass.json with the text {"user": "JoeShmoe", "password": "JoesPassword"} matching a Sirsi Workflows admin user
 
   - ```docker-compose up --build -d```
   - the webserver will be available at url {local machine url}:8000
@@ -62,9 +59,9 @@ scan a TigerCard to check a patron's library permissions
   - sudo pip3 install flask requests
   - cd /var/www/
   - sudo git clone https://github.com/lsulibraries/LibraryBouncer
-  - copy or symlink ./BouncerAPI/librarybouncer.conf to /etc/https/conf.d/
-  - create the same file at ./BouncerAPI/user_pass.json with permissions -rw-------
-  - create the same file at ./BouncerAPI/access_stats.txt
+  - copy or symlink ./BouncerAPI/librarybouncer.conf to /etc/httpd/conf.d/librarybouncer.conf
+  - create a file at ./BouncerAPI/user_pass.json with permissions -rw-------
+  - create a file at ./BouncerAPI/access_stats.txt
   - sudo chown -R garmstrong:apache /var/www/LibraryBouncer
   - disable selinux unless you want to figure out that madness
   - look in the apache logs & the access_stats.txt for error messages
@@ -79,7 +76,6 @@ scan a TigerCard to check a patron's library permissions
 - For the expected errors, a text message will guide the Security Guard toward possible solutions
 - This ActiveCard program gives minimal info on the patron & holds no secrets, because it is located in an insecure place
 
-
 - to run:
 
   - Click the program icon on the Desktop
@@ -88,12 +84,12 @@ scan a TigerCard to check a patron's library permissions
 
 - to edit then build the executable from the source code:
 
-  - for example, if you move the APIserver url, you'll need to update the hardcoded server in ActiveCard.go
+  for example, if you move the APIserver url, you'll need to update the hardcoded address in ActiveCard.go
 
   - install Golang on your computer
   - cd to ./BouncerInterface/ in your terminal
   - ```go get github.com/gookit/color```
-  - edit ActiveCard.go
-  - for Windows: ```go build ActiveCard.go```
-  - for linux: ```GOOS=windows GOARCH=amd64 go build ActiveCard.go```
+  - revise ActiveCard.go
+  - build in Windows: ```go build ActiveCard.go```
+  - build in linux: ```GOOS=windows GOARCH=amd64 go build ActiveCard.go```
   - the new ActiveCard.exe file in ./BouncerInterface/ is a windows executable.
