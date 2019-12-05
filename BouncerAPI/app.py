@@ -1,11 +1,15 @@
 #! usr/env/python3
 
-import json
 import logging
 from datetime import datetime, timedelta
 
-from flask import Flask, json, request, render_template, jsonify
 import requests
+from flask import Flask, json, request, jsonify
+
+
+RECENTS = list()
+with open("DegreeAttributes.json", "r") as f:
+    DEGREE_ATTRIBUTES = json.load(f)
 
 
 application = Flask(__name__)
@@ -17,10 +21,6 @@ logging.basicConfig(
     datefmt="%Y-%m-%d %H:%M:%S",
     format="%(asctime)s;%(message)s",
 )
-
-
-with open('DegreeAttributes.json', 'r') as f:
-    DEGREE_ATTRIBUTES = json.load(f)
 
 
 def parse_secrets():
@@ -37,33 +37,57 @@ def login(username, password):
 
 
 def get_userinfo(session, session_token, userid):
-    endpoint = pick_an_endpoint(userid, session_token)
-    if not endpoint:
-        enriched = {
-            "College": "Unknown College",
-            "Department": "Unknown Dept",
-            "CIP Codes": "Unknown CIP Code",
-            "Curriculum/Major": "Unknown Major",
-            "Curriculum Code": "Unknown Curriculum Code",
-            "Degree": "Unknown Degree",
-            "Expiration": "1900-01-01",
-            "user": "Unknown User",
-        }
-        log_access(enriched)
-        return enriched
+    if not (userid and len(userid) == 17):
+        """
+        This branch is for a complete miss.
+        The ID could not possibly match something in Sirsi.
+        We'll create a dict filled with default fields, so the logger doesn't choke.
+        """
+        userinfo = dict()
+        userinfo = selectively_update(userinfo)
+        return userinfo
+
+    endpoint = f"https://lalu.sirsi.net/lalu_ilsws/rest/patron/lookupPatronInfo?clientID=DS_CLIENT&sessionToken={session_token}&userID={userid}&includePatronStatusInfo=True&includePatronInfo=True&json=True"
     response = session.post(endpoint)
-    parsed = parse_response(response)
-    enriched = enrich(parsed)
-    log_access(enriched)
-    return enriched
+    userinfo = parse_response(response)
 
+    if userinfo["Curriculum Code"] not in DEGREE_ATTRIBUTES:
+        """
+        This branch is for a partial miss.
+        We got some response from Sirsi, but the response has a value that doesn't match anything in the enrichment dataset.
+        Either Sirsi gave us an "Unknown Dept" null response,
+        or Sirsi gave us a valid dept that happends to not be in the DEGREE_ATTRIBUTES enrichment dataset.
+        We'll fill in the missing fields, so the logger doesn't choke.
+        """
+        userinfo = selectively_update(userinfo)
+        return userinfo
 
-def pick_an_endpoint(userid, session_token):
-    if userid and len(userid) == 17:
-        endpoint = f"https://lalu.sirsi.net/lalu_ilsws/rest/patron/lookupPatronInfo?clientID=DS_CLIENT&sessionToken={session_token}&userID={userid}&includePatronStatusInfo=True&includePatronInfo=True&json=True"
     else:
-        endpoint = None
-    return endpoint
+        additional = DEGREE_ATTRIBUTES[userinfo["Curriculum Code"]]
+        userinfo = userinfo.update(additional)
+        if "College" not in userinfo:
+            # This fixes an edge case in the enrichment dataset.
+            # Grad school & professional schools have no "College" assigned, so
+            # we assign to them a generic "Graduate or Professional" value for College
+            userinfo["College"] = "Graduate or Professional"
+        return userinfo
+
+
+def selectively_update(userinfo):
+    defaults = {
+        "College": "Unknown College",
+        "Department": "Unknown Dept",
+        "CIP Codes": "Unknown CIP Code",
+        "Curriculum/Major": "Unknown Major",
+        "Curriculum Code": "Unknown Curriculum Code",
+        "Degree": "Unknown Degree",
+        "Expiration": "1900-01-01",
+        "user": "Unknown User",
+    }
+    for k, v in defaults.items():
+        if k not in userinfo:
+            userinfo[k] = v
+    return userinfo
 
 
 def parse_response(r):
@@ -76,68 +100,42 @@ def parse_response(r):
     return {"Expiration": exp, "Curriculum Code": dept, "user": user}
 
 
-def enrich(parsed):
-    additional = DEGREE_ATTRIBUTES.get(parsed['Curriculum Code'])
-    if additional:
-        parsed.update(additional)
-        # grad school & professional schools have no "College" in the reference DegreeAttributes.json
-        # we give them a generic "Graduate or Professional" value for College
-        if "College" not in parsed:
-            parsed["College"] = "Graduate or Professional"
-        return parsed
-    else:
-        defaults = {
-            "College": "Unknown College",
-            "Department": "Unknown Dept",
-            "CIP Codes": "Unknown CIP Code",
-            "Curriculum/Major": "Unknown Major",
-            "Curriculum Code": "Unknown Curriculum Code",
-            "Degree": "Unknown Degree",
-            "Expiration": "1900-01-01",
-            "user": "Unknown User",
-        }
-        for k, v in defaults.items():
-            if k not in parsed:
-                parsed[k] = v
-        return parsed
-
-
-def log_access(parsed):
-    if is_repeat(parsed):
+def log_access(userinfo):
+    if is_repeat(userinfo):
         return
-    exp = datetime.strptime(parsed["Expiration"], "%Y-%m-%d")
+    exp = datetime.strptime(userinfo["Expiration"], "%Y-%m-%d")
     now = datetime.now()
-    dept = parsed.get("Department", "Unknown Dept")
-    college = parsed.get('College', 'Unknown College')
-    cip_codes = parsed.get('CIP Codes', 'Unknown CIP Code')
-    curr_maj = parsed.get('Curriculum/Major', 'Unknown Major')
-    curr_code = parsed.get('Curriculum Code', "Unknown Curriculum Code")
-    degree = parsed.get('Degree', "Unknown Degree")
+    dept = userinfo.get("Department", "Unknown Dept")
+    college = userinfo.get("College", "Unknown College")
+    cip_codes = userinfo.get("CIP Codes", "Unknown CIP Code")
+    curr_maj = userinfo.get("Curriculum/Major", "Unknown Major")
+    curr_code = userinfo.get("Curriculum Code", "Unknown Curriculum Code")
+    degree = userinfo.get("Degree", "Unknown Degree")
     if now > exp:
-        logging.info(f"Denied;{college};{dept};{degree};{curr_maj};{cip_codes};{curr_code}")
+        logging.info(
+            f"Denied;{college};{dept};{degree};{curr_maj};{cip_codes};{curr_code}"
+        )
     else:
-        logging.info(f"Allowed;{college};{dept};{degree};{curr_maj};{cip_codes};{curr_code}")
+        logging.info(
+            f"Allowed;{college};{dept};{degree};{curr_maj};{cip_codes};{curr_code}"
+        )
 
 
-recent_hits = list()
-
-
-def is_repeat(parsed):
+def is_repeat(userinfo):
     is_match = False
-    parsed["now"] = datetime.now()
-    global recent_hits
-    olds = [
-        i
-        for i in recent_hits
-        if i.get("now") + timedelta(minutes=15) < datetime.now()
-    ]
+    userinfo["now"] = datetime.now()
+    global RECENTS
+    olds = [i for i in RECENTS if i.get("now") + timedelta(minutes=15) < datetime.now()]
     for i in olds:
-        recent_hits.remove(i)
-    for i in recent_hits:
-        if (i["user"], i["Curriculum Code"]) == (parsed["user"], parsed["Curriculum Code"]):
+        RECENTS.remove(i)
+    for i in RECENTS:
+        if (i["user"], i["Curriculum Code"]) == (
+            userinfo["user"],
+            userinfo["Curriculum Code"],
+        ):
             is_match = True
             break
-    recent_hits.append(parsed)
+    RECENTS.append(userinfo)
     return is_match
 
 
@@ -147,7 +145,9 @@ def index():
     session, session_token = login(username, password)
     userid = request.args.get("id")
     userinfo = get_userinfo(session, session_token, userid)
-    # To defend against scraping from a 3rd party, we only expose "expiration" to the outside world. 
+    # We log a decent amount of non-identifiable info
+    log_access(userinfo)
+    # But to defend against scraping from a 3rd party, we only expose "expiration" to the outside world.
     displayed_userinfo = {"expiration": userinfo["Expiration"]}
     return jsonify(displayed_userinfo)
 
