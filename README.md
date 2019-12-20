@@ -69,8 +69,9 @@ scan a TigerCard to check a patron's library permissions
   - ```sudo pip3 install flask requests```
   - ```cd /var/www/```
   - ```sudo git clone https://github.com/lsulibraries/LibraryBouncer```
-  - copy or symlink /var/www/LibraryBouncer/config/apache/librarybouncer.conf to /etc/httpd/conf.d/librarybouncer.conf
-  - create a file at ./BouncerAPI/user_pass.json with permissions -rw------- holding a Sirsi User/Password
+  - garmstrong:apache is important to the file BouncerAPI/config/apache/librarybouncer.conf.  If you wish to change the user:group of file app.py & wsgi.py, then also change the apache config to match.
+  - ```sudo ln -s /var/www/LibraryBouncer/config/apache/librarybouncer.conf /etc/httpd/conf.d/librarybouncer.conf```
+  - create a file at ./BouncerAPI/user_pass.json with permissions -rw------- with text ```{"user": "{name}", "password": "{password}"```
   - ```touch /var/www/LibraryBouncer/BouncerAPI/access_stats.txt```
   - ```sudo chown -R garmstrong:apache /var/www/LibraryBouncer```
   - ```sudo firewall-cmd --zone=public --permanent --add-service=http```

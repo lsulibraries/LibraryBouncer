@@ -65,7 +65,7 @@ def get_userinfo(session, session_token, userid):
     else:
         additional = DEGREE_ATTRIBUTES[userinfo["Curriculum Code"]]
         userinfo.update(additional)
-        if not userinfo.get( "College"):
+        if not userinfo.get("College"):
             # This fixes an edge case in the enrichment dataset.
             # Grad school & professional schools have no "College" assigned, so
             # we assign to them a generic "Graduate or Professional" value for College
