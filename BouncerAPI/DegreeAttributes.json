@@ -1,0 +1,3311 @@
+{
+  "AGBU":
+  {
+    "College": "Agriculture",
+    "Department": "Agricultural Economics",
+    "CIP Codes": "10101",
+    "Curriculum/Major": "Agricultural Business",
+    "Curriculum Code": "AGBU",
+    "Degree": "B.S."
+  },
+  "FREC":
+  {
+    "College": "Agriculture",
+    "Department": "Agricultural Economics",
+    "CIP Codes": "10103",
+    "Curriculum/Major": "Food & Resource Economics",
+    "Curriculum Code": "FREC",
+    "Degree": "B.S."
+  },
+  "ANMLS":
+  {
+    "College": "Agriculture",
+    "Department": "School of Animal Sciences",
+    "CIP Codes": "10901",
+    "Curriculum/Major": "Animal Sciences",
+    "Curriculum Code": "ANMLS",
+    "Degree": "B.S."
+  },
+  "ADP":
+  {
+    "College": "Agriculture",
+    "Department": "School of Animal Sciences",
+    "CIP Codes": "10901",
+    "Curriculum/Major": "Animal, Dairy, & Poultry Sciences",
+    "Curriculum Code": "ADP",
+    "Degree": "B.S."
+  },
+  "FDSCT":
+  {
+    "College": "Agriculture",
+    "Department": "Food Science",
+    "CIP Codes": "11001",
+    "Curriculum/Major": "Food Science & Technology",
+    "Curriculum Code": "FDSCT",
+    "Degree": "B.S."
+  },
+  "HED":
+  {
+    "College": "Agriculture",
+    "Department": "Human Ecology",
+    "CIP Codes": "513101",
+    "Curriculum/Major": "Dietetics",
+    "Curriculum Code": "HED",
+    "Degree": "B.S."
+  },
+  "HEFCC":
+  {
+    "College": "Agriculture",
+    "Department": "Human Ecology",
+    "CIP Codes": "190101",
+    "Curriculum/Major": "Family Child & Consumer Science",
+    "Curriculum Code": "HEFCC",
+    "Degree": "B.S."
+  },
+  "NFS":
+  {
+    "College": "Agriculture",
+    "Department": "Nutrition and Food Sciences, School of",
+    "CIP Codes": "301901",
+    "Curriculum/Major": "Nutrition and Food Sciences",
+    "Curriculum Code": "NFS",
+    "Degree": "B.S."
+  },
+  "TAM":
+  {
+    "College": "Agriculture",
+    "Department": "Textiles, Apparel Design & Merchandising",
+    "CIP Codes": "190901",
+    "Curriculum/Major": "Textiles, Apparel & Merchandising",
+    "Curriculum Code": "TAM",
+    "Degree": "B.S."
+  },
+  "HETAM":
+  {
+    "College": "Agriculture",
+    "Department": "Textiles, Apparel Design & Merchandising",
+    "CIP Codes": "521902",
+    "Curriculum/Major": "Textiles, Apparel & Merchandising",
+    "Curriculum Code": "HETAM",
+    "Degree": "B.S."
+  },
+  "VED":
+  {
+    "College": "Agriculture",
+    "Department": "Human Resource Education & Workforce  Development",
+    "CIP Codes": "131201",
+    "Curriculum/Major": "Vocational Education",
+    "Curriculum Code": "VED",
+    "Degree": "B.S."
+  },
+  "FCSE":
+  {
+    "College": "Agriculture",
+    "Department": "Human Resource Education & Workforce Development",
+    "CIP Codes": "131308",
+    "Curriculum/Major": "Family & Consumer Science Education - Grades 6-12",
+    "Curriculum Code": "FCSE",
+    "Degree": "B.S."
+  },
+  "MKED":
+  {
+    "College": "Agriculture",
+    "Department": "Human Resource Education & Workforce Development",
+    "CIP Codes": "131310",
+    "Curriculum/Major": "Marketing Education - Grades 6-12",
+    "Curriculum Code": "MKED",
+    "Degree": "B.S."
+  },
+  "AGEE":
+  {
+    "College": "Agriculture",
+    "Department": "Agricultural & Extension Education &  Evaluation",
+    "CIP Codes": "10801",
+    "Curriculum/Major": "Agriculture and Extension Education",
+    "Curriculum Code": "AGEE",
+    "Degree": "B.S."
+  },
+  "NFCSC":
+  {
+    "College": "Agriculture",
+    "Department": "Interdepartmental",
+    "CIP Codes": "11001",
+    "Curriculum/Major": "Nutrition, Food, & Culinary Sciences",
+    "Curriculum Code": "NFCSC",
+    "Degree": "B.S."
+  },
+  "PLSYS":
+  {
+    "College": "Agriculture",
+    "Department": "Interdepartmental",
+    "CIP Codes": "11101",
+    "Curriculum/Major": "Plant and Soil Systems",
+    "Curriculum Code": "PLSYS",
+    "Degree": "B.S."
+  },
+  "FDSYS":
+  {
+    "College": "Agriculture",
+    "Department": "School of Plant, Environmental, and Soil  Sciences",
+    "CIP Codes": "11001",
+    "Curriculum/Major": "Food Systems",
+    "Curriculum Code": "FDSYS",
+    "Degree": "B.S."
+  },
+  "ENSYS":
+  {
+    "College": "Agriculture",
+    "Department": "School of Plant, Environmental, and Soil Sciences",
+    "CIP Codes": "30104",
+    "Curriculum/Major": "Environmental Management Systems",
+    "Curriculum Code": "ENSYS",
+    "Degree": "B.S."
+  },
+  "FORM":
+  {
+    "College": "Agriculture",
+    "Department": "School of Renewable Natural Resources",
+    "CIP Codes": "30506",
+    "Curriculum/Major": "Forestry - Forest Management",
+    "Curriculum Code": "FORM",
+    "Degree": "B.S.F."
+  },
+  "NREM":
+  {
+    "College": "Agriculture",
+    "Department": "School of Renewable Natural Resources",
+    "CIP Codes": "30201",
+    "Curriculum/Major": "Natural Resource Ecology & Management",
+    "Curriculum Code": "NREM",
+    "Degree": "B.S."
+  },
+  "WILDF":
+  {
+    "College": "Agriculture",
+    "Department": "School of Renewable Natural Resources",
+    "CIP Codes": "30601",
+    "Curriculum/Major": "Wildlife & Fisheries",
+    "Curriculum Code": "WILDF",
+    "Degree": "B.S."
+  },
+  "VEALT":
+  {
+    "College": "Agriculture",
+    "Department": "Nondegree",
+    "CIP Codes": "30601",
+    "Curriculum/Major": "Alternate Certificate Voc. Educ. Teachers",
+    "Curriculum Code": "VEALT",
+    "Degree": ""
+  },
+  "PVMED":
+  {
+    "College": "Agriculture",
+    "Department": "Nondegree",
+    "CIP Codes": "30601",
+    "Curriculum/Major": "Preveterinary Medicine",
+    "Curriculum Code": "PVMED",
+    "Degree": ""
+  },
+  "ARCH":
+  {
+    "College": "Art & Design",
+    "Department": "Architecture",
+    "CIP Codes": "40201",
+    "Curriculum/Major": "Architecture",
+    "Curriculum Code": "ARCH",
+    "Degree": "B.Arch"
+  },
+  "STAR":
+  {
+    "College": "Art & Design",
+    "Department": "Art",
+    "CIP Codes": "500702",
+    "Curriculum/Major": "Studio Art",
+    "Curriculum Code": "STAR",
+    "Degree": "B.F.A."
+  },
+  "ID":
+  {
+    "College": "Art & Design",
+    "Department": "Interior Design",
+    "CIP Codes": "40501",
+    "Curriculum/Major": "Interior Design",
+    "Curriculum Code": "ID",
+    "Degree": "B.I.D."
+  },
+  "LA":
+  {
+    "College": "Art & Design",
+    "Department": "Landscape Architecture",
+    "CIP Codes": "40601",
+    "Curriculum/Major": "Landscape Architecture",
+    "Curriculum Code": "LA",
+    "Degree": "B.L.A."
+  },
+  "PARCH":
+  {
+    "College": "Art & Design",
+    "Department": "Nondegree",
+    "CIP Codes": "40601",
+    "Curriculum/Major": "Pre-Architecture",
+    "Curriculum Code": "PARCH",
+    "Degree": ""
+  },
+  "PART":
+  {
+    "College": "Art & Design",
+    "Department": "Nondegree",
+    "CIP Codes": "40601",
+    "Curriculum/Major": "Pre-Art",
+    "Curriculum Code": "PART",
+    "Degree": ""
+  },
+  "PID":
+  {
+    "College": "Art & Design",
+    "Department": "Nondegree",
+    "CIP Codes": "40601",
+    "Curriculum/Major": "Pre-Interior Design",
+    "Curriculum Code": "PID",
+    "Degree": ""
+  },
+  "PLA":
+  {
+    "College": "Art & Design",
+    "Department": "Nondegree",
+    "CIP Codes": "40601",
+    "Curriculum/Major": "Pre-Landscape",
+    "Curriculum Code": "PLA",
+    "Degree": ""
+  },
+  "DESUN":
+  {
+    "College": "Art & Design",
+    "Department": "Nondegree",
+    "CIP Codes": "40601",
+    "Curriculum/Major": "Architecture Design-Undecided",
+    "Curriculum Code": "DESUN",
+    "Degree": ""
+  },
+  "FAUN":
+  {
+    "College": "Art & Design",
+    "Department": "Nondegree",
+    "CIP Codes": "40601",
+    "Curriculum/Major": "Fine Arts-Undecided",
+    "Curriculum Code": "FAUN",
+    "Degree": ""
+  },
+  "ACCT":
+  {
+    "College": "Business",
+    "Department": "Accounting",
+    "CIP Codes": "520301",
+    "Curriculum/Major": "Accounting",
+    "Curriculum Code": "ACCT",
+    "Degree": "B.S."
+  },
+  "ECONS":
+  {
+    "College": "Business",
+    "Department": "Economics",
+    "CIP Codes": "520601",
+    "Curriculum/Major": "Economics",
+    "Curriculum Code": "ECONS",
+    "Degree": "B.S."
+  },
+  "ITF":
+  {
+    "College": "Business",
+    "Department": "Economics",
+    "CIP Codes": "521101",
+    "Curriculum/Major": "International Trade and Finance",
+    "Curriculum Code": "ITF",
+    "Degree": "B.S."
+  },
+  "FIN":
+  {
+    "College": "Business",
+    "Department": "Finance",
+    "CIP Codes": "520801",
+    "Curriculum/Major": "Finance",
+    "Curriculum Code": "FIN",
+    "Degree": "B.S."
+  },
+  "ISDS":
+  {
+    "College": "Business",
+    "Department": "Entrepreneurship & Information Systems",
+    "CIP Codes": "521301",
+    "Curriculum/Major": "Information Systems and Decision Sciences",
+    "Curriculum Code": "ISDS",
+    "Degree": "B.S."
+  },
+  "ISMIS":
+  {
+    "College": "Business",
+    "Department": "Entrepreneurship & Information Systems",
+    "CIP Codes": "521301",
+    "Curriculum/Major": "ISDS-Management Information",
+    "Curriculum Code": "ISMIS",
+    "Degree": "B.S."
+  },
+  "ISOM":
+  {
+    "College": "Business",
+    "Department": "Entrepreneurship & Information Systems",
+    "CIP Codes": "521301",
+    "Curriculum/Major": "Systems ISDS-Operations Management",
+    "Curriculum Code": "ISOM",
+    "Degree": "B.S."
+  },
+  "ENTR":
+  {
+    "College": "Business",
+    "Department": "Entrepreneurship & Information Systems",
+    "CIP Codes": "520701",
+    "Curriculum/Major": "Entrepreneurship",
+    "Curriculum Code": "ENTR",
+    "Degree": "B.S."
+  },
+  "GBUS":
+  {
+    "College": "Business",
+    "Department": "Interdepartmental",
+    "CIP Codes": "520201",
+    "Curriculum/Major": "General Business",
+    "Curriculum Code": "GBUS",
+    "Degree": "B.S."
+  },
+  "MGT":
+  {
+    "College": "Business",
+    "Department": "Management",
+    "CIP Codes": "520201",
+    "Curriculum/Major": "Management",
+    "Curriculum Code": "MGT",
+    "Degree": "B.S."
+  },
+  "MKT":
+  {
+    "College": "Business",
+    "Department": "Marketing",
+    "CIP Codes": "521401",
+    "Curriculum/Major": "Marketing",
+    "Curriculum Code": "MKT",
+    "Degree": "B.S."
+  },
+  "BADUN":
+  {
+    "College": "Business",
+    "Department": "Nondegree",
+    "CIP Codes": "521401",
+    "Curriculum/Major": "Business Administration-Undecided",
+    "Curriculum Code": "BADUN",
+    "Degree": ""
+  },
+  "CES":
+  {
+    "College": "Coast & Environment",
+    "Department": "Interdepartmental",
+    "CIP Codes": "400607",
+    "Curriculum/Major": "Coastal Environmental Science",
+    "Curriculum Code": "CES",
+    "Degree": "B.S. in Coastal Environm. Science"
+  },
+  "BE":
+  {
+    "College": "Engineering",
+    "Department": "Biological & Agricultural Engineering",
+    "CIP Codes": "140501",
+    "Curriculum/Major": "Biological Engineering",
+    "Curriculum Code": "BE",
+    "Degree": "B.S.B.E."
+  },
+  "CHE":
+  {
+    "College": "Engineering",
+    "Department": "Chemical Engineering Gordon A & Mary Cain",
+    "CIP Codes": "140701",
+    "Curriculum/Major": "Chemical Engineering",
+    "Curriculum Code": "CHE",
+    "Degree": "B.S.Che."
+  },
+  "CE":
+  {
+    "College": "Engineering",
+    "Department": "Civil & Environmental Engineering",
+    "CIP Codes": "140801",
+    "Curriculum/Major": "Civil Engineering",
+    "Curriculum Code": "CE",
+    "Degree": "B.S.C.E."
+  },
+  "EVEG":
+  {
+    "College": "Engineering",
+    "Department": "Civil & Environmental Engineering",
+    "CIP Codes": "141401",
+    "Curriculum/Major": "Environmental Engineering",
+    "Curriculum Code": "EVEG",
+    "Degree": "B.S.Ev.E.*"
+  },
+  "ENVEG":
+  {
+    "College": "Engineering",
+    "Department": "Civil & Environmental Engineering",
+    "CIP Codes": "141401",
+    "Curriculum/Major": "Environmental Engineering",
+    "Curriculum Code": "ENVEG",
+    "Degree": "B.S.Env.E."
+  },
+  "CSC":
+  {
+    "College": "Engineering",
+    "Department": "Electrical Engineering and Computer Science (School of)",
+    "CIP Codes": "110701",
+    "Curriculum/Major": "Computer Science",
+    "Curriculum Code": "CSC",
+    "Degree": "B.S."
+  },
+  "EEC":
+  {
+    "College": "Engineering",
+    "Department": "Electrical Engineering and Computer Science (School of)",
+    "CIP Codes": "140901",
+    "Curriculum/Major": "Computer Engineering",
+    "Curriculum Code": "EEC",
+    "Degree": "B.S.Comp.E.*"
+  },
+  "EE":
+  {
+    "College": "Engineering",
+    "Department": "Electrical Engineering and Computer Science (School of)",
+    "CIP Codes": "141001",
+    "Curriculum/Major": "Electrical Engineering",
+    "Curriculum Code": "EE",
+    "Degree": "B.S.E.E."
+  },
+  "CM":
+  {
+    "College": "Engineering",
+    "Department": "Construction Management",
+    "CIP Codes": "522001",
+    "Curriculum/Major": "Construction Management",
+    "Curriculum Code": "CM",
+    "Degree": "B.S.C.M."
+  },
+  "ME":
+  {
+    "College": "Engineering",
+    "Department": "Mechanical & Industrial Engineering",
+    "CIP Codes": "141901",
+    "Curriculum/Major": "Mechanical Engineering",
+    "Curriculum Code": "ME",
+    "Degree": "B.S.M.E."
+  },
+  "IE":
+  {
+    "College": "Engineering",
+    "Department": "Mechanical & Industrial Engineering",
+    "CIP Codes": "143501",
+    "Curriculum/Major": "Industrial Engineering",
+    "Curriculum Code": "IE",
+    "Degree": "B.S.I.E."
+  },
+  "PETE":
+  {
+    "College": "Engineering",
+    "Department": "Petroleum Engineering, Craft & Hawkins",
+    "CIP Codes": "142501",
+    "Curriculum/Major": "Petroleum Engineering",
+    "Curriculum Code": "PETE",
+    "Degree": "B.S.P.E."
+  },
+  "ENGRU":
+  {
+    "College": "Engineering",
+    "Department": "Nondegree",
+    "CIP Codes": "142501",
+    "Curriculum/Major": "Engineering\u2013Undecided",
+    "Curriculum Code": "ENGRU",
+    "Degree": ""
+  },
+  "ENGRP":
+  {
+    "College": "Engineering",
+    "Department": "Nondegree",
+    "CIP Codes": "142501",
+    "Curriculum/Major": "Summer Ent. Prog.- H.S.",
+    "Curriculum Code": "ENGRP",
+    "Degree": ""
+  },
+  "SEART":
+  {
+    "College": "Human Sciences and Education",
+    "Department": "Education (School of)",
+    "CIP Codes": "131302 Art Education (K-12)",
+    "Curriculum/Major": "Summer Ent. Prog.- H.S.",
+    "Curriculum Code": "SEART",
+    "Degree": "B.S."
+  },
+  "DUALC":
+  {
+    "College": "Human Sciences and Education",
+    "Department": "Education (School of)",
+    "CIP Codes": "131202 Dual Certification General/Special Education: Grades 1-5",
+    "Curriculum/Major": "Summer Ent. Prog.- H.S.",
+    "Curriculum Code": "DUALC",
+    "Degree": "B.S."
+  },
+  "PK3CT":
+  {
+    "College": "Human Sciences and Education",
+    "Department": "Education (School of)",
+    "CIP Codes": "131210",
+    "Curriculum/Major": "Early Childhood Education: PK-3 Teacher Certification",
+    "Curriculum Code": "PK3CT",
+    "Degree": "B.S."
+  },
+  "ELED":
+  {
+    "College": "Human Sciences and Education",
+    "Department": "Education (School of)",
+    "CIP Codes": "131202",
+    "Curriculum/Major": "Elementary Grades Education",
+    "Curriculum Code": "ELED",
+    "Degree": "B.S."
+  },
+  "SECED":
+  {
+    "College": "Human Sciences and Education",
+    "Department": "Education (School of)",
+    "CIP Codes": "131205",
+    "Curriculum/Major": "Secondary Education",
+    "Curriculum Code": "SECED",
+    "Degree": "B.S."
+  },
+  "ELEDH":
+  {
+    "College": "Human Sciences and Education",
+    "Department": "Educational Theory, Policy, and Practice",
+    "CIP Codes": "131205",
+    "Curriculum/Major": "Elementary Education- Holmes (Holmes students will be tracked by concentration code)",
+    "Curriculum Code": "ELEDH",
+    "Degree": ""
+  },
+  "EGED":
+  {
+    "College": "Human Sciences and Education",
+    "Department": "Educational Theory, Policy, and Practice",
+    "CIP Codes": "131205",
+    "Curriculum/Major": "Elementary Education- LSUA (Formerly an internal tracking device for students at LSUA)",
+    "Curriculum Code": "EGED",
+    "Degree": ""
+  },
+  "HRE":
+  {
+    "College": "Human Sciences and Education",
+    "Department": "Human Resource Education & Workforce Development",
+    "CIP Codes": "131201",
+    "Curriculum/Major": "Human Resource Education",
+    "Curriculum Code": "HRE",
+    "Degree": "B.S."
+  },
+  "BUED":
+  {
+    "College": "Human Sciences and Education",
+    "Department": "Intercollegiate",
+    "CIP Codes": "131303",
+    "Curriculum/Major": "Business Education\u2013Grades 6-12",
+    "Curriculum Code": "BUED",
+    "Degree": "B.S."
+  },
+  "ATRN":
+  {
+    "College": "Human Sciences and Education",
+    "Department": "Kinesiology (School of)",
+    "CIP Codes": "510913 Athletic Training",
+    "Curriculum/Major": "Business Education\u2013Grades 6-12",
+    "Curriculum Code": "ATRN",
+    "Degree": "B.S."
+  },
+  "KIN":
+  {
+    "College": "Human Sciences and Education",
+    "Department": "Kinesiology (School of)",
+    "CIP Codes": "131314",
+    "Curriculum/Major": "Kinesiology",
+    "Curriculum Code": "KIN",
+    "Degree": "B.S."
+  },
+  "SPADM":
+  {
+    "College": "Human Sciences and Education",
+    "Department": "Kinesiology (School of)",
+    "CIP Codes": "310504",
+    "Curriculum/Major": "Sport Administration",
+    "Curriculum Code": "SPADM",
+    "Degree": "B.S."
+  },
+  "SWORK":
+  {
+    "College": "Human Sciences and Education",
+    "Department": "Social Work (School of)",
+    "CIP Codes": "440701",
+    "Curriculum/Major": "Social Work",
+    "Curriculum Code": "SWORK",
+    "Degree": "B.S.W."
+  },
+  "CFS":
+  {
+    "College": "Human Sciences and Education",
+    "Department": "Social Work (School of)",
+    "CIP Codes": "190101",
+    "Curriculum/Major": "Child & Family Studies",
+    "Curriculum Code": "CFS",
+    "Degree": "B.S."
+  },
+  "HECFS":
+  {
+    "College": "Human Sciences and Education",
+    "Department": "Social Work (School of)",
+    "CIP Codes": "190101",
+    "Curriculum/Major": "Child & Family Studies",
+    "Curriculum Code": "HECFS",
+    "Degree": "B.S."
+  },
+  "ECONA":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Intercollegiate",
+    "CIP Codes": "450601",
+    "Curriculum/Major": "Economics",
+    "Curriculum Code": "ECONA",
+    "Degree": "B.A."
+  },
+  "GS":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Interdepartmental",
+    "CIP Codes": "240102",
+    "Curriculum/Major": "General Studies",
+    "Curriculum Code": "GS",
+    "Degree": "B.G.S."
+  },
+  "IS":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Interdepartmental",
+    "CIP Codes": "309999",
+    "Curriculum/Major": "Interdisciplinary Studies",
+    "Curriculum Code": "IS",
+    "Degree": "B.I.S."
+  },
+  "INTL":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Interdepartmental",
+    "CIP Codes": "302001",
+    "Curriculum/Major": "International Studies",
+    "Curriculum Code": "INTL",
+    "Degree": "B.A."
+  },
+  "LIBAR":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Interdepartmental",
+    "CIP Codes": "240101",
+    "Curriculum/Major": "Liberal Arts",
+    "Curriculum Code": "LIBAR",
+    "Degree": "B.A."
+  },
+  "WGS":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Interdepartmental",
+    "CIP Codes": "50207",
+    "Curriculum/Major": "Women's & Gender Studies",
+    "Curriculum Code": "WGS",
+    "Degree": "B.A."
+  },
+  "RUSAS":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Interdepartmental",
+    "CIP Codes": "50110",
+    "Curriculum/Major": "Russian Area Studies",
+    "Curriculum Code": "RUSAS",
+    "Degree": "B.A."
+  },
+  "COMD":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Communication Sciences & Disorders",
+    "CIP Codes": "510204",
+    "Curriculum/Major": "Communication Disorders",
+    "Curriculum Code": "COMD",
+    "Degree": "B.A."
+  },
+  "CMST":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Communication Studies",
+    "CIP Codes": "90101",
+    "Curriculum/Major": "Communication Studies",
+    "Curriculum Code": "CMST",
+    "Degree": "B.A."
+  },
+  "ENGL":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "English",
+    "CIP Codes": "230101",
+    "Curriculum/Major": "English",
+    "Curriculum Code": "ENGL",
+    "Degree": "B.A."
+  },
+  "GERM":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Foreign Languages & Literatures",
+    "CIP Codes": "160501",
+    "Curriculum/Major": "German",
+    "Curriculum Code": "GERM",
+    "Degree": "B.A."
+  },
+  "CLATN":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Foreign Languages & Literatures",
+    "CIP Codes": "161203",
+    "Curriculum/Major": "Latin",
+    "Curriculum Code": "CLATN",
+    "Degree": "B.A."
+  },
+  "SPAN":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Foreign Languages & Literatures",
+    "CIP Codes": "160905",
+    "Curriculum/Major": "Spanish",
+    "Curriculum Code": "SPAN",
+    "Degree": "B.A."
+  },
+  "FREN":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "French Studies",
+    "CIP Codes": "160901",
+    "Curriculum/Major": "French",
+    "Curriculum Code": "FREN",
+    "Degree": "B.A."
+  },
+  "ANTH":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Geography & Anthropology",
+    "CIP Codes": "450201",
+    "Curriculum/Major": "Anthropology",
+    "Curriculum Code": "ANTH",
+    "Degree": "B.A."
+  },
+  "GEOGA":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Geography & Anthropology",
+    "CIP Codes": "450701",
+    "Curriculum/Major": "Geography",
+    "Curriculum Code": "GEOGA",
+    "Degree": "B.A."
+  },
+  "GEOGS":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Geography & Anthropology",
+    "CIP Codes": "450701",
+    "Curriculum/Major": "Geography",
+    "Curriculum Code": "GEOGS",
+    "Degree": "B.S."
+  },
+  "HIST":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "History",
+    "CIP Codes": "540101",
+    "Curriculum/Major": "History",
+    "Curriculum Code": "HIST",
+    "Degree": "B.A."
+  },
+  "PHIL":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Philosophy & Religious Studies",
+    "CIP Codes": "380101",
+    "Curriculum/Major": "Philosophy",
+    "Curriculum Code": "PHIL",
+    "Degree": "B.A."
+  },
+  "POLI":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Political Science",
+    "CIP Codes": "451001",
+    "Curriculum/Major": "Political Science",
+    "Curriculum Code": "POLI",
+    "Degree": "B.A."
+  },
+  "PSYCA":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Psychology",
+    "CIP Codes": "420101",
+    "Curriculum/Major": "Psychology",
+    "Curriculum Code": "PSYCA",
+    "Degree": "B.A."
+  },
+  "PSYCS":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Psychology",
+    "CIP Codes": "420101",
+    "Curriculum/Major": "Psychology",
+    "Curriculum Code": "PSYCS",
+    "Degree": "B.S."
+  },
+  "SOCL":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Sociology",
+    "CIP Codes": "451101",
+    "Curriculum/Major": "Sociology",
+    "Curriculum Code": "SOCL",
+    "Degree": "B.A."
+  },
+  "SPCM":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Speech Communication",
+    "CIP Codes": "231001",
+    "Curriculum/Major": "Speech Communication",
+    "Curriculum Code": "SPCM",
+    "Degree": "B.A."
+  },
+  "PLAW":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Nondegree",
+    "CIP Codes": "231001",
+    "Curriculum/Major": "Prelaw",
+    "Curriculum Code": "PLAW",
+    "Degree": ""
+  },
+  "ADVSP":
+  {
+    "College": "Humanities & Social Sciences",
+    "Department": "Nondegree",
+    "CIP Codes": "231001",
+    "Curriculum/Major": "Summer Adv Study-High",
+    "Curriculum Code": "ADVSP",
+    "Degree": ""
+  },
+  "MC":
+  {
+    "College": "Mass Communication",
+    "Department": "Mass Communication",
+    "CIP Codes": "90102",
+    "Curriculum/Major": "Mass Communication",
+    "Curriculum Code": "MC",
+    "Degree": "B.A.M.C."
+  },
+  "MUSIC":
+  {
+    "College": "Music & Dramatic Arts",
+    "Department": "School of Music",
+    "CIP Codes": "500903",
+    "Curriculum/Major": "Music",
+    "Curriculum Code": "MUSIC",
+    "Degree": "B.MUS."
+  },
+  "MUSED":
+  {
+    "College": "Music & Dramatic Arts",
+    "Department": "School of Music",
+    "CIP Codes": "131312",
+    "Curriculum/Major": "Music Education",
+    "Curriculum Code": "MUSED",
+    "Degree": "B.M.E."
+  },
+  "MUSAR":
+  {
+    "College": "Music & Dramatic Arts",
+    "Department": "School of Music",
+    "CIP Codes": "500901",
+    "Curriculum/Major": "Music",
+    "Curriculum Code": "MUSAR",
+    "Degree": "B.A."
+  },
+  "THTR":
+  {
+    "College": "Music & Dramatic Arts",
+    "Department": "Theatre",
+    "CIP Codes": "500501",
+    "Curriculum/Major": "Theatre",
+    "Curriculum Code": "THTR",
+    "Degree": "B.A."
+  },
+  "PRMUS":
+  {
+    "College": "Music & Dramatic Arts",
+    "Department": "Nondegree",
+    "CIP Codes": "500501",
+    "Curriculum/Major": "Pre-Music",
+    "Curriculum Code": "PRMUS",
+    "Degree": ""
+  },
+  "BCH":
+  {
+    "College": "Science",
+    "Department": "Biological Sciences",
+    "CIP Codes": "260202",
+    "Curriculum/Major": "Biochemistry",
+    "Curriculum Code": "BCH",
+    "Degree": "B.S."
+  },
+  "BIOL":
+  {
+    "College": "Science",
+    "Department": "Biological Sciences",
+    "CIP Codes": "260101",
+    "Curriculum/Major": "Biological Sciences",
+    "Curriculum Code": "BIOL",
+    "Degree": "B.S."
+  },
+  "MBIO":
+  {
+    "College": "Science",
+    "Department": "Biological Sciences",
+    "CIP Codes": "260502",
+    "Curriculum/Major": "Microbiology",
+    "Curriculum Code": "MBIO",
+    "Degree": "B.S."
+  },
+  "PBIO":
+  {
+    "College": "Science",
+    "Department": "Biological Sciences",
+    "CIP Codes": "260301",
+    "Curriculum/Major": "Plant Biology",
+    "Curriculum Code": "PBIO",
+    "Degree": "B.S."
+  },
+  "ZOOL":
+  {
+    "College": "Science",
+    "Department": "Biological Sciences",
+    "CIP Codes": "260701",
+    "Curriculum/Major": "Zoology",
+    "Curriculum Code": "ZOOL",
+    "Degree": "B.S."
+  },
+  "CHEM":
+  {
+    "College": "Science",
+    "Department": "Chemistry",
+    "CIP Codes": "400501",
+    "Curriculum/Major": "Chemistry",
+    "Curriculum Code": "CHEM",
+    "Degree": "B.S."
+  },
+  "GEOLP":
+  {
+    "College": "Science",
+    "Department": "Geology & Geophysics",
+    "CIP Codes": "400601",
+    "Curriculum/Major": "Geology",
+    "Curriculum Code": "GEOLP",
+    "Degree": "B.S.Geol."
+  },
+  "MATH":
+  {
+    "College": "Science",
+    "Department": "Mathematics",
+    "CIP Codes": "270101",
+    "Curriculum/Major": "Mathematics",
+    "Curriculum Code": "MATH",
+    "Degree": "B.S."
+  },
+  "PHYS":
+  {
+    "College": "Science",
+    "Department": "Physics & Astronomy",
+    "CIP Codes": "400801",
+    "Curriculum/Major": "Physics",
+    "Curriculum Code": "PHYS",
+    "Degree": "B.S."
+  },
+  "PDEN":
+  {
+    "College": "Science",
+    "Department": "Nondegree",
+    "CIP Codes": "400801",
+    "Curriculum/Major": "Predental",
+    "Curriculum Code": "PDEN",
+    "Degree": ""
+  },
+  "PMED":
+  {
+    "College": "Science",
+    "Department": "Nondegree",
+    "CIP Codes": "400801",
+    "Curriculum/Major": "Premedical",
+    "Curriculum Code": "PMED",
+    "Degree": ""
+  },
+  "SCIUN":
+  {
+    "College": "Science",
+    "Department": "Nondegree",
+    "CIP Codes": "400801",
+    "Curriculum/Major": "Science - Undecided",
+    "Curriculum Code": "SCIUN",
+    "Degree": ""
+  },
+  "BSCUN":
+  {
+    "College": "Science",
+    "Department": "Nondegree",
+    "CIP Codes": "400801",
+    "Curriculum/Major": "Basic Sciences-Undecided",
+    "Curriculum Code": "BSCUN",
+    "Degree": ""
+  },
+  "GCDEN":
+  {
+    "College": "University College",
+    "Department": "Intercollegiate",
+    "CIP Codes": "260101",
+    "Curriculum/Major": "Predentistry (3+1)",
+    "Curriculum Code": "GCDEN",
+    "Degree": "B.S."
+  },
+  "GCMED":
+  {
+    "College": "University College",
+    "Department": "Intercollegiate",
+    "CIP Codes": "260101",
+    "Curriculum/Major": "Premedicine (3+1)",
+    "Curriculum Code": "GCMED",
+    "Degree": "B.S."
+  },
+  "RTH":
+  {
+    "College": "University College",
+    "Department": "Intercollegiate",
+    "CIP Codes": "510908",
+    "Curriculum/Major": "Allied Health-Cardiopulmonary Science",
+    "Curriculum Code": "RTH",
+    "Degree": ""
+  },
+  "DH":
+  {
+    "College": "University College",
+    "Department": "Intercollegiate",
+    "CIP Codes": "510602",
+    "Curriculum/Major": "Allied Health-Dental Hygiene",
+    "Curriculum Code": "DH",
+    "Degree": ""
+  },
+  "DLT":
+  {
+    "College": "University College",
+    "Department": "Intercollegiate",
+    "CIP Codes": "510603",
+    "Curriculum/Major": "Allied Health - Dental Laboratory Tech.",
+    "Curriculum Code": "DLT",
+    "Degree": ""
+  },
+  "PA":
+  {
+    "College": "University College",
+    "Department": "Intercollegiate",
+    "CIP Codes": "510912",
+    "Curriculum/Major": "Allied Health-Pre-Physicians Assistant",
+    "Curriculum Code": "PA",
+    "Degree": ""
+  },
+  "RC*":
+  {
+    "College": "University College",
+    "Department": "Intercollegiate",
+    "CIP Codes": "512310",
+    "Curriculum/Major": "Allied Health-Rehabilitation Counseling",
+    "Curriculum Code": "RC*",
+    "Degree": ""
+  },
+  "OPMDT":
+  {
+    "College": "University College",
+    "Department": "Intercollegiate",
+    "CIP Codes": "511803",
+    "Curriculum/Major": "Ophthalmic Medical Technology",
+    "Curriculum Code": "OPMDT",
+    "Degree": ""
+  },
+  "PMDT":
+  {
+    "College": "University College",
+    "Department": "Intercollegiate",
+    "CIP Codes": "511005",
+    "Curriculum/Major": "Premedical Technology",
+    "Curriculum Code": "PMDT",
+    "Degree": ""
+  },
+  "PNURS":
+  {
+    "College": "University College",
+    "Department": "Intercollegiate",
+    "CIP Codes": "511105",
+    "Curriculum/Major": "Pre-Nursing",
+    "Curriculum Code": "PNURS",
+    "Degree": ""
+  },
+  "POT*":
+  {
+    "College": "University College",
+    "Department": "Intercollegiate",
+    "CIP Codes": "512306",
+    "Curriculum/Major": "Preoccupational Therapy",
+    "Curriculum Code": "POT*",
+    "Degree": ""
+  },
+  "PPHAR*":
+  {
+    "College": "University College",
+    "Department": "Intercollegiate",
+    "CIP Codes": "511103",
+    "Curriculum/Major": "Prepharmacy",
+    "Curriculum Code": "PPHAR*",
+    "Degree": ""
+  },
+  "PPT*":
+  {
+    "College": "University College",
+    "Department": "Intercollegiate",
+    "CIP Codes": "512308",
+    "Curriculum/Major": "Prephysical Therapy",
+    "Curriculum Code": "PPT*",
+    "Degree": ""
+  },
+  "MRA":
+  {
+    "College": "University College",
+    "Department": "Intercollegiate",
+    "CIP Codes": "510706",
+    "Curriculum/Major": "Allied Health-Medical Records Administration",
+    "Curriculum Code": "MRA",
+    "Degree": ""
+  },
+  "OT":
+  {
+    "College": "University College",
+    "Department": "Intercollegiate",
+    "CIP Codes": "512306",
+    "Curriculum/Major": "Allied Health-Occupational Therapy",
+    "Curriculum Code": "OT",
+    "Degree": ""
+  },
+  "PT":
+  {
+    "College": "University College",
+    "Department": "Intercollegiate",
+    "CIP Codes": "512308",
+    "Curriculum/Major": "Allied Health-Physical Therapy",
+    "Curriculum Code": "PT",
+    "Degree": ""
+  },
+  "RT":
+  {
+    "College": "University College",
+    "Department": "Intercollegiate",
+    "CIP Codes": "510907",
+    "Curriculum/Major": "Allied Health-Radiological Technician",
+    "Curriculum Code": "RT",
+    "Degree": ""
+  },
+  "NURS":
+  {
+    "College": "University College",
+    "Department": "Intercollegiate",
+    "CIP Codes": "511105",
+    "Curriculum/Major": "Prenursing",
+    "Curriculum Code": "NURS",
+    "Degree": ""
+  },
+  "POPT":
+  {
+    "College": "University College",
+    "Department": "Intercollegiate",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Preoptometry",
+    "Curriculum Code": "POPT",
+    "Degree": ""
+  },
+  "AO":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Audit Only",
+    "Curriculum Code": "AO",
+    "Degree": ""
+  },
+  "CCUR":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Concurrently Enrolled",
+    "Curriculum Code": "CCUR",
+    "Degree": ""
+  },
+  "CCURM":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Concurrently Enrolled-Music",
+    "Curriculum Code": "CCURM",
+    "Degree": ""
+  },
+  "DUEN":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Dual Enrollment",
+    "Curriculum Code": "DUEN",
+    "Degree": ""
+  },
+  "BRCC":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "LSU-BRCC Coop Program",
+    "Curriculum Code": "BRCC",
+    "Degree": ""
+  },
+  "LGLB":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "LSU Global Program",
+    "Curriculum Code": "LGLB",
+    "Degree": ""
+  },
+  "SCOOP":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "LSU-SU Cooperative",
+    "Curriculum Code": "SCOOP",
+    "Degree": ""
+  },
+  "NORAD":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Not Regularly Admitted",
+    "Curriculum Code": "NORAD",
+    "Degree": ""
+  },
+  "SU":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Summer Only",
+    "Curriculum Code": "SU",
+    "Degree": ""
+  },
+  "UNAH":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Undecided-Arts & Humanities",
+    "Curriculum Code": "UNAH",
+    "Degree": ""
+  },
+  "UNSE":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Undecided-Sciences & Engineering",
+    "Curriculum Code": "UNSE",
+    "Degree": ""
+  },
+  "UNSS":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Undecided-Social Sciences",
+    "Curriculum Code": "UNSS",
+    "Degree": ""
+  },
+  "ACCES":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Access Program",
+    "Curriculum Code": "ACCES",
+    "Degree": ""
+  },
+  "GCUN":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "General College-Undecided",
+    "Curriculum Code": "GCUN",
+    "Degree": ""
+  },
+  "LSUA":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "LSUA Enrolled Students",
+    "Curriculum Code": "LSUA",
+    "Degree": ""
+  },
+  "NMSU":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Nonmatriculating-Summer Only",
+    "Curriculum Code": "NMSU",
+    "Degree": ""
+  },
+  "UNDEC":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Undecided",
+    "Curriculum Code": "UNDEC",
+    "Degree": ""
+  },
+  "PAGRI":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Pre-Agriculture",
+    "Curriculum Code": "PAGRI",
+    "Degree": ""
+  },
+  "PADSN":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Pre-Art & Design",
+    "Curriculum Code": "PADSN",
+    "Degree": ""
+  },
+  "PBADM":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Pre-Business Administration",
+    "Curriculum Code": "PBADM",
+    "Degree": ""
+  },
+  "PDEG":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Pre-Degree",
+    "Curriculum Code": "PDEG",
+    "Degree": ""
+  },
+  "PEDUC":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Pre-Education",
+    "Curriculum Code": "PEDUC",
+    "Degree": ""
+  },
+  "PENGR":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Pre-Engineering",
+    "Curriculum Code": "PENGR",
+    "Degree": ""
+  },
+  "PHSS":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Pre-Humanities & Social Sciences",
+    "Curriculum Code": "PHSS",
+    "Degree": ""
+  },
+  "PMCOM":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Pre-Mass Comm",
+    "Curriculum Code": "PMCOM",
+    "Degree": ""
+  },
+  "PMDA":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Pre-Music & Dramatic Arts",
+    "Curriculum Code": "PMDA",
+    "Degree": ""
+  },
+  "PSCE":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Pre-School Coast & Environment",
+    "Curriculum Code": "PSCE",
+    "Degree": ""
+  },
+  "PA&S":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Pre-Arts & Sciences",
+    "Curriculum Code": "PA&S",
+    "Degree": ""
+  },
+  "PBASC":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Pre-Basic Sciences",
+    "Curriculum Code": "PBASC",
+    "Degree": ""
+  },
+  "PDESN":
+  {
+    "College": "University College",
+    "Department": "Nondegree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Pre-Design",
+    "Curriculum Code": "PDESN",
+    "Degree": ""
+  },
+  "PLUS":
+  {
+    "College": "Extended Learning",
+    "Department": "Non-Degree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "LSU 25+",
+    "Curriculum Code": "PLUS",
+    "Degree": ""
+  },
+  "EXT":
+  {
+    "College": "Extended Learning",
+    "Department": "Non-Degree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Extension Course Work",
+    "Curriculum Code": "EXT",
+    "Degree": ""
+  },
+  "PASS":
+  {
+    "College": "Extended Learning",
+    "Department": "Non-Degree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Adult Special Students",
+    "Curriculum Code": "PASS",
+    "Degree": ""
+  },
+  "APA":
+  {
+    "College": "Miscellaneous Programs",
+    "Department": "Non-Degree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Academic Programs Abroad",
+    "Curriculum Code": "APA",
+    "Degree": ""
+  },
+  "MCRI":
+  {
+    "College": "Miscellaneous Programs",
+    "Department": "Non-Degree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Multicampus Registration-Inbound",
+    "Curriculum Code": "MCRI",
+    "Degree": ""
+  },
+  "NSE":
+  {
+    "College": "Miscellaneous Programs",
+    "Department": "Non-Degree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "National Student Exchange",
+    "Curriculum Code": "NSE",
+    "Degree": ""
+  },
+  "NMATR":
+  {
+    "College": "Miscellaneous Programs",
+    "Department": "Non-Degree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Nonmatriculated",
+    "Curriculum Code": "NMATR",
+    "Degree": ""
+  },
+  "SDSU":
+  {
+    "College": "Miscellaneous Programs",
+    "Department": "Non-Degree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Scholastic Drop-Summer Only",
+    "Curriculum Code": "SDSU",
+    "Degree": ""
+  },
+  "SD1T":
+  {
+    "College": "Miscellaneous Programs",
+    "Department": "Non-Degree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Scholastic Drop - Wintersession Only",
+    "Curriculum Code": "SD1T",
+    "Degree": ""
+  },
+  "EXCH":
+  {
+    "College": "Miscellaneous Programs",
+    "Department": "Non-Degree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Student Exchange Programs",
+    "Curriculum Code": "EXCH",
+    "Degree": ""
+  },
+  "SPROV":
+  {
+    "College": "Miscellaneous Programs",
+    "Department": "Non-Degree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "Summer Provisional Program",
+    "Curriculum Code": "SPROV",
+    "Degree": ""
+  },
+  "ISO":
+  {
+    "College": "Miscellaneous Programs",
+    "Department": "Non-Degree",
+    "CIP Codes": "511199",
+    "Curriculum/Major": "International Students",
+    "Curriculum Code": "ISO",
+    "Degree": ""
+  },
+  "JD":
+  {
+    "Department": "LSU Law Center",
+    "CIP Codes": "220101",
+    "Curriculum/Major": "Juris Doctorate",
+    "Curriculum Code": "JD",
+    "Degree": "JD"
+  },
+  "JDCL":
+  {
+    "Department": "LSU Law Center",
+    "CIP Codes": "220101",
+    "Curriculum/Major": "Juris Doctorate / Graduate Diploma in Comparative Law",
+    "Curriculum Code": "JDCL",
+    "Degree": "JDCL"
+  },
+  "LLM":
+  {
+    "Department": "LSU Law Center",
+    "CIP Codes": "220201",
+    "Curriculum/Major": "Master of Laws Degree in Comparative Law",
+    "Curriculum Code": "LLM",
+    "Degree": "LLM"
+  },
+  "SVMCB":
+  {
+    "Department": "Veterinary Medicine-Interdepartmental Program",
+    "CIP Codes": "512501",
+    "Curriculum/Major": "Biomedical and Veterinary Medical Sciences*-",
+    "Curriculum Code": "SVMCB",
+    "Degree": "M.S."
+  },
+  "SVMPB":
+  {
+    "Department": "Veterinary Medicine-Interdepartmental Program",
+    "CIP Codes": "512501",
+    "Curriculum/Major": "Comparative Biomedical Sciences Biomedical and Veterinary Medical Sciences*-",
+    "Curriculum Code": "SVMPB",
+    "Degree": "M.S."
+  },
+  "SVMCS":
+  {
+    "Department": "Veterinary Medicine-Interdepartmental Program",
+    "CIP Codes": "512501",
+    "Curriculum/Major": "Pathobiological Sciences Biomedical and Veterinary Medical Sciences*-Veterinary",
+    "Curriculum Code": "SVMCS",
+    "Degree": "M.S."
+  },
+  "SVMEC":
+  {
+    "Department": "Veterinary Medicine-Interdepartmental Program",
+    "CIP Codes": "512501",
+    "Curriculum/Major": "Clinical Sciences* Veterinary Medical Sciences Epidemiology & Community",
+    "Curriculum Code": "SVMEC",
+    "Degree": "M.S."
+  },
+  "SVMAN":
+  {
+    "Department": "Veterinary Medicine-Interdepartmental Program",
+    "CIP Codes": "512501",
+    "Curriculum/Major": "Health Veterinary Anatomy & Cell Biology",
+    "Curriculum Code": "SVMAN",
+    "Degree": "M.S."
+  },
+  "SVMMP":
+  {
+    "Department": "Veterinary Medicine-Interdepartmental Program",
+    "CIP Codes": "512501",
+    "Curriculum/Major": "Veterinary Microbiology & Parasitology",
+    "Curriculum Code": "SVMMP",
+    "Degree": "M.S."
+  },
+  "SVMPA":
+  {
+    "Department": "Veterinary Medicine-Interdepartmental Program",
+    "CIP Codes": "512501",
+    "Curriculum/Major": "Veterinary Pathology",
+    "Curriculum Code": "SVMPA",
+    "Degree": "M.S."
+  },
+  "SVMPT":
+  {
+    "Department": "Veterinary Medicine-Interdepartmental Program",
+    "CIP Codes": "512501",
+    "Curriculum/Major": "Veterinary Physiology, Pharmacology, & Toxicology",
+    "Curriculum Code": "SVMPT",
+    "Degree": "M.S."
+  },
+  "PVMCB":
+  {
+    "Department": "Veterinary Medicine-Interdepartmental Program",
+    "CIP Codes": "512401",
+    "Curriculum/Major": "Biomedical and Veterinary Medical Sciences*-",
+    "Curriculum Code": "PVMCB",
+    "Degree": "Ph.D."
+  },
+  "PVMPB":
+  {
+    "Department": "Veterinary Medicine-Interdepartmental Program",
+    "CIP Codes": "512401",
+    "Curriculum/Major": "Comparative Biomedical Sciences Biomedical and Veterinary Medical Sciences*-",
+    "Curriculum Code": "PVMPB",
+    "Degree": "Ph.D."
+  },
+  "PVMCS":
+  {
+    "Department": "Veterinary Medicine-Interdepartmental Program",
+    "CIP Codes": "512401",
+    "Curriculum/Major": "Pathobiological Sciences Biomedical and Veterinary Medical Sciences* -Veterinary",
+    "Curriculum Code": "PVMCS",
+    "Degree": "Ph.D."
+  },
+  "PVMEC":
+  {
+    "Department": "Veterinary Medicine-Interdepartmental Program",
+    "CIP Codes": "512401",
+    "Curriculum/Major": "Clinical Sciences Veterinary Medical Sciences*- Epidemiology &",
+    "Curriculum Code": "PVMEC",
+    "Degree": "Ph.D."
+  },
+  "PVMAN":
+  {
+    "Department": "Veterinary Medicine-Interdepartmental Program",
+    "CIP Codes": "512401",
+    "Curriculum/Major": "Community Health Veterinary Anatomy & Cell Biology",
+    "Curriculum Code": "PVMAN",
+    "Degree": "Ph.D."
+  },
+  "PVMMP":
+  {
+    "Department": "Veterinary Medicine-Interdepartmental Program",
+    "CIP Codes": "512401",
+    "Curriculum/Major": "Veterinary Microbiology & Parasitology",
+    "Curriculum Code": "PVMMP",
+    "Degree": "Ph.D."
+  },
+  "PVMPA":
+  {
+    "Department": "Veterinary Medicine-Interdepartmental Program",
+    "CIP Codes": "512401",
+    "Curriculum/Major": "Veterinary Pathology",
+    "Curriculum Code": "PVMPA",
+    "Degree": "Ph.D."
+  },
+  "PVMPT":
+  {
+    "Department": "Veterinary Medicine-Interdepartmental Program",
+    "CIP Codes": "512401",
+    "Curriculum/Major": "Veterinary Physiology, Pharmacology, & Toxicology",
+    "Curriculum Code": "PVMPT",
+    "Degree": "Ph.D."
+  },
+  "VMED":
+  {
+    "Department": "Veterinary Medicine-Interdepartmental Program",
+    "CIP Codes": "512401",
+    "Curriculum/Major": "degree. Individual codes have been created solely to track  Veterinary Medicine",
+    "Curriculum Code": "VMED",
+    "Degree": "D.V.M."
+  },
+  "GEALT":
+  {
+    "Department": "Nondegree",
+    "CIP Codes": "512401",
+    "Curriculum/Major": "Alternate Certification-Secondary Teachers",
+    "Curriculum Code": "GEALT",
+    "Degree": ""
+  },
+  "EXTN":
+  {
+    "Department": "Nondegree",
+    "CIP Codes": "512401",
+    "Curriculum/Major": "Extension Course Work",
+    "Curriculum Code": "EXTN",
+    "Degree": ""
+  },
+  "COOPS":
+  {
+    "Department": "Nondegree",
+    "CIP Codes": "512401",
+    "Curriculum/Major": "LSU-SU Cooperative",
+    "Curriculum Code": "COOPS",
+    "Degree": ""
+  },
+  "NMATL":
+  {
+    "Department": "Nondegree",
+    "CIP Codes": "512401",
+    "Curriculum/Major": "Nonmatriculated-Limited",
+    "Curriculum Code": "NMATL",
+    "Degree": ""
+  },
+  "NMATX":
+  {
+    "Department": "Nondegree",
+    "CIP Codes": "512401",
+    "Curriculum/Major": "Nonmatriculated Exchange",
+    "Curriculum Code": "NMATX",
+    "Degree": ""
+  },
+  "GAO":
+  {
+    "Department": "Nondegree",
+    "CIP Codes": "512401",
+    "Curriculum/Major": "Graduate-Audit Only",
+    "Curriculum Code": "GAO",
+    "Degree": ""
+  },
+  "VMNM":
+  {
+    "Department": "Nondegree",
+    "CIP Codes": "512401",
+    "Curriculum/Major": "Veterinary Medicine-Nonmatriculated",
+    "Curriculum Code": "VMNM",
+    "Degree": ""
+  },
+  "SACCT":
+  {
+    "Department": "Accounting",
+    "CIP Codes": "520301",
+    "Curriculum/Major": "Accounting",
+    "Curriculum Code": "SACCT",
+    "Degree": "MAcc"
+  },
+  "PACCT":
+  {
+    "Department": "Accounting",
+    "CIP Codes": "520301",
+    "Curriculum/Major": "Accounting",
+    "Curriculum Code": "PACCT",
+    "Degree": "Ph.D."
+  },
+  "SAGEC":
+  {
+    "Department": "Agricultural Economics",
+    "CIP Codes": "10103",
+    "Curriculum/Major": "Agricultural Economics",
+    "Curriculum Code": "SAGEC",
+    "Degree": "M.S."
+  },
+  "PAGEC":
+  {
+    "Department": "Agricultural Economics",
+    "CIP Codes": "10103",
+    "Curriculum/Major": "Agricultural Economics",
+    "Curriculum Code": "PAGEC",
+    "Degree": "Ph.D."
+  },
+  "SAEE":
+  {
+    "Department": "Agricultural & Extension Education",
+    "CIP Codes": "10801",
+    "Curriculum/Major": "Agricultural & Extension Education",
+    "Curriculum Code": "SAEE",
+    "Degree": "M.S."
+  },
+  "PAEE":
+  {
+    "Department": "Agricultural & Extension Education",
+    "CIP Codes": "10801",
+    "Curriculum/Major": "Agricultural & Extension Education",
+    "Curriculum Code": "PAEE",
+    "Degree": "Ph.D."
+  },
+  "MAGRI":
+  {
+    "Department": "Interdepartmental Program in Agriculture",
+    "CIP Codes": "10000",
+    "Curriculum/Major": "Agriculture",
+    "Curriculum Code": "MAGRI",
+    "Degree": "Master of Agriculture"
+  },
+  "SAGRO":
+  {
+    "Department": "School of Plant, Environmental, and Soil Sciences",
+    "CIP Codes": "11102",
+    "Curriculum/Major": "Agronomy",
+    "Curriculum Code": "SAGRO",
+    "Degree": "M.S."
+  },
+  "PAGRO":
+  {
+    "Department": "School of Plant, Environmental, and Soil Sciences",
+    "CIP Codes": "11102",
+    "Curriculum/Major": "Agronomy",
+    "Curriculum Code": "PAGRO",
+    "Degree": "Ph.D."
+  },
+  "SADPA":
+  {
+    "Department": "School of Animal Science",
+    "CIP Codes": "10901",
+    "Curriculum/Major": "Animal, Dairy, & Poultry Sciences",
+    "Curriculum Code": "SADPA",
+    "Degree": "M.S."
+  },
+  "SADPD":
+  {
+    "Department": "School of Animal Science",
+    "CIP Codes": "10901",
+    "Curriculum/Major": "Animal, Dairy, & Poultry Sciences",
+    "Curriculum Code": "SADPD",
+    "Degree": "M.S"
+  },
+  "SADPP":
+  {
+    "Department": "School of Animal Science",
+    "CIP Codes": "10901",
+    "Curriculum/Major": "Animal, Dairy, & Poultry Sciences",
+    "Curriculum Code": "SADPP",
+    "Degree": "M.S."
+  },
+  "PADA":
+  {
+    "Department": "School of Animal Science",
+    "CIP Codes": "10901",
+    "Curriculum/Major": "Animal & Dairy Sciences",
+    "Curriculum Code": "PADA",
+    "Degree": "Ph.D."
+  },
+  "PADD":
+  {
+    "Department": "School of Animal Science",
+    "CIP Codes": "10901",
+    "Curriculum/Major": "Animal & Dairy Sciences",
+    "Curriculum Code": "PADD",
+    "Degree": "Ph.D."
+  },
+  "SARCH":
+  {
+    "Department": "Architecture",
+    "CIP Codes": "40201",
+    "Curriculum/Major": "Architecture",
+    "Curriculum Code": "SARCH",
+    "Degree": "M.S."
+  },
+  "MARCH":
+  {
+    "Department": "Architecture",
+    "CIP Codes": "40201",
+    "Curriculum/Major": "Architecture",
+    "Curriculum Code": "MARCH",
+    "Degree": "Master of Architecture"
+  },
+  "AFAAH":
+  {
+    "Department": "Art",
+    "CIP Codes": "500703",
+    "Curriculum/Major": "Fine Arts - Art History",
+    "Curriculum Code": "AFAAH",
+    "Degree": "M.A."
+  },
+  "MFAS":
+  {
+    "Department": "Art",
+    "CIP Codes": "500702",
+    "Curriculum/Major": "Fine Arts - Studio Art",
+    "Curriculum Code": "MFAS",
+    "Degree": "M.F.A"
+  },
+  "PDDCP":
+  {
+    "Department": "Interdepartmental Program in Art + Design",
+    "CIP Codes": "300000",
+    "Curriculum/Major": "Cultural Preservation",
+    "Curriculum Code": "PDDCP",
+    "Degree": "DDes"
+  },
+  "MBAE":
+  {
+    "Department": "Biological & Agricultural Engineering",
+    "CIP Codes": "140301",
+    "Curriculum/Major": "Biological & Agricultural Engineering",
+    "Curriculum Code": "MBAE",
+    "Degree": "M.S.B.A.E."
+  },
+  "SBCH":
+  {
+    "Department": "Biological Sciences",
+    "CIP Codes": "260202",
+    "Curriculum/Major": "Biochemistry",
+    "Curriculum Code": "SBCH",
+    "Degree": "M.S."
+  },
+  "PBCH":
+  {
+    "Department": "Biological Sciences",
+    "CIP Codes": "260202",
+    "Curriculum/Major": "Biochemistry",
+    "Curriculum Code": "PBCH",
+    "Degree": "Ph.D."
+  },
+  "SBIOL":
+  {
+    "Department": "Biological Sciences",
+    "CIP Codes": "260101",
+    "Curriculum/Major": "Biological Sciences",
+    "Curriculum Code": "SBIOL",
+    "Degree": "M.S."
+  },
+  "PBIOL":
+  {
+    "Department": "Biological Sciences",
+    "CIP Codes": "260101",
+    "Curriculum/Major": "Biological Sciences",
+    "Curriculum Code": "PBIOL",
+    "Degree": "Ph.D."
+  },
+  "SMBIO":
+  {
+    "Department": "Biological Sciences",
+    "CIP Codes": "260502",
+    "Curriculum/Major": "Microbiology",
+    "Curriculum Code": "SMBIO",
+    "Degree": "M.S."
+  },
+  "PMBIO":
+  {
+    "Department": "Biological Sciences",
+    "CIP Codes": "260502",
+    "Curriculum/Major": "Microbiology",
+    "Curriculum Code": "PMBIO",
+    "Degree": "Ph.D."
+  },
+  "SPBIO":
+  {
+    "Department": "Biological Sciences",
+    "CIP Codes": "260301",
+    "Curriculum/Major": "Plant Biology",
+    "Curriculum Code": "SPBIO",
+    "Degree": "M.S."
+  },
+  "PPBIO":
+  {
+    "Department": "Biological Sciences",
+    "CIP Codes": "260301",
+    "Curriculum/Major": "Plant Biology",
+    "Curriculum Code": "PPBIO",
+    "Degree": "Ph.D."
+  },
+  "SZOOL":
+  {
+    "Department": "Biological Sciences",
+    "CIP Codes": "260701",
+    "Curriculum/Major": "Zoology",
+    "Curriculum Code": "SZOOL",
+    "Degree": "M.S."
+  },
+  "PZOOL":
+  {
+    "Department": "Biological Sciences",
+    "CIP Codes": "260701",
+    "Curriculum/Major": "Zoology",
+    "Curriculum Code": "PZOOL",
+    "Degree": "Ph.D."
+  },
+  "MBADM":
+  {
+    "Department": "Business Administration",
+    "CIP Codes": "520201",
+    "Curriculum/Major": "Business Administration",
+    "Curriculum Code": "MBADM",
+    "Degree": "M.B.A."
+  },
+  "PBDM":
+  {
+    "Department": "Business Administration",
+    "CIP Codes": "520201",
+    "Curriculum/Major": "Business Administration",
+    "Curriculum Code": "PBDM",
+    "Degree": "Ph.D."
+  },
+  "PBAFN":
+  {
+    "Department": "Business Administration",
+    "CIP Codes": "520801",
+    "Curriculum/Major": "Business Administration -Finance",
+    "Curriculum Code": "PBAFN",
+    "Degree": "Ph.D."
+  },
+  "PBAIS":
+  {
+    "Department": "Business Administration",
+    "CIP Codes": "521301",
+    "Curriculum/Major": "Business Administration-Information Systems & Decision",
+    "Curriculum Code": "PBAIS",
+    "Degree": "Ph.D."
+  },
+  "PBAMG":
+  {
+    "Department": "Business Administration",
+    "CIP Codes": "520201",
+    "Curriculum/Major": "Sciences  Business Administration-Management",
+    "Curriculum Code": "PBAMG",
+    "Degree": "Ph.D."
+  },
+  "PBAMK":
+  {
+    "Department": "Business Administration",
+    "CIP Codes": "521401",
+    "Curriculum/Major": "Business Administration-Marketing",
+    "Curriculum Code": "PBAMK",
+    "Degree": "Ph.D."
+  },
+  "SCECO":
+  {
+    "Department": "Interdepartmental Program in Coastal & Ecological Engineering",
+    "CIP Codes": "142401",
+    "Curriculum/Major": "Coastal & Ecological Engineering",
+    "Curriculum Code": "SCECO",
+    "Degree": "M.S."
+  },
+  "MCHE":
+  {
+    "Department": "Chemical Engineering",
+    "CIP Codes": "140701",
+    "Curriculum/Major": "Chemical Engineering",
+    "Curriculum Code": "MCHE",
+    "Degree": "M.S.Ch.E."
+  },
+  "PCHEN":
+  {
+    "Department": "Chemical Engineering",
+    "CIP Codes": "140701",
+    "Curriculum/Major": "Chemical Engineering",
+    "Curriculum Code": "PCHEN",
+    "Degree": "Ph.D."
+  },
+  "SCHEM":
+  {
+    "Department": "Chemistry",
+    "CIP Codes": "400501",
+    "Curriculum/Major": "Chemistry",
+    "Curriculum Code": "SCHEM",
+    "Degree": "M.S."
+  },
+  "PCHEM":
+  {
+    "Department": "Chemistry",
+    "CIP Codes": "400501",
+    "Curriculum/Major": "Chemistry",
+    "Curriculum Code": "PCHEM",
+    "Degree": "Ph.D."
+  },
+  "MCE":
+  {
+    "Department": "Civil & Environmental Engineering",
+    "CIP Codes": "140801",
+    "Curriculum/Major": "Civil Engineering",
+    "Curriculum Code": "MCE",
+    "Degree": "M.S.C.E."
+  },
+  "PCE":
+  {
+    "Department": "Civil & Environmental Engineering",
+    "CIP Codes": "140801",
+    "Curriculum/Major": "Civil Engineering",
+    "Curriculum Code": "PCE",
+    "Degree": "Ph.D."
+  },
+  "ACOMD":
+  {
+    "Department": "Communication Sciences & Disorders",
+    "CIP Codes": "510204",
+    "Curriculum/Major": "Communication Disorders",
+    "Curriculum Code": "ACOMD",
+    "Degree": "M.A."
+  },
+  "PCOMD":
+  {
+    "Department": "Communication Sciences & Disorders",
+    "CIP Codes": "510204",
+    "Curriculum/Major": "Communication Disorders",
+    "Curriculum Code": "PCOMD",
+    "Degree": "Ph.D."
+  },
+  "ACMST":
+  {
+    "Department": "Communication Studies",
+    "CIP Codes": "90101",
+    "Curriculum/Major": "Communication Studies",
+    "Curriculum Code": "ACMST",
+    "Degree": "M.A."
+  },
+  "PCMST":
+  {
+    "Department": "Communication Studies",
+    "CIP Codes": "90101",
+    "Curriculum/Major": "Communication Studies",
+    "Curriculum Code": "PCMST",
+    "Degree": "Ph.D."
+  },
+  "ACOMP":
+  {
+    "Department": "Interdepartmental Program in Comparative Literature",
+    "CIP Codes": "160104",
+    "Curriculum/Major": "Comparative Literature",
+    "Curriculum Code": "ACOMP",
+    "Degree": "M.A."
+  },
+  "PCOMP":
+  {
+    "Department": "Interdepartmental Program in Comparative Literature",
+    "CIP Codes": "160104",
+    "Curriculum/Major": "Comparative Literature",
+    "Curriculum Code": "PCOMP",
+    "Degree": "Ph.D."
+  },
+  "PCSC":
+  {
+    "Department": "Computer Science",
+    "CIP Codes": "110701",
+    "Curriculum/Major": "Computer Science",
+    "Curriculum Code": "PCSC",
+    "Degree": "Ph.D."
+  },
+  "MSYSC":
+  {
+    "Department": "Computer Science",
+    "CIP Codes": "110401",
+    "Curriculum/Major": "Systems Science",
+    "Curriculum Code": "MSYSC",
+    "Degree": "M.S.S.S."
+  },
+  "MCSC":
+  {
+    "Department": "Computer Science",
+    "CIP Codes": "110701",
+    "Curriculum/Major": "Computer Science",
+    "Curriculum Code": "MCSC",
+    "Degree": "M.S."
+  },
+  "MCM":
+  {
+    "Department": "Construction Management",
+    "CIP Codes": "522001",
+    "Curriculum/Major": "Construction Management",
+    "Curriculum Code": "MCM",
+    "Degree": "M.S.CM."
+  },
+  "EADM":
+  {
+    "Department": "School of Education",
+    "CIP Codes": "130401",
+    "Curriculum/Major": "Administration",
+    "Curriculum Code": "EADM",
+    "Degree": "M. Ed."
+  },
+  "ECIN":
+  {
+    "Department": "School of Education",
+    "CIP Codes": "130301",
+    "Curriculum/Major": "Curriculum & Instruction",
+    "Curriculum Code": "ECIN",
+    "Degree": "M.Ed."
+  },
+  "PEDCI":
+  {
+    "Department": "School of Education",
+    "CIP Codes": "130301",
+    "Curriculum/Major": "Curriculum & Instruction",
+    "Curriculum Code": "PEDCI",
+    "Degree": "Ph.D."
+  },
+  "AEDCI":
+  {
+    "Department": "School of Education",
+    "CIP Codes": "130101",
+    "Curriculum/Major": "Education",
+    "Curriculum Code": "AEDCI",
+    "Degree": "M.A."
+  },
+  "AELRC":
+  {
+    "Department": "School of Education",
+    "CIP Codes": "130101",
+    "Curriculum/Major": "Education",
+    "Curriculum Code": "AELRC",
+    "Degree": "M.A."
+  },
+  "CEDCI":
+  {
+    "Department": "School of Education",
+    "CIP Codes": "130101",
+    "Curriculum/Major": "Education",
+    "Curriculum Code": "CEDCI",
+    "Degree": "Ed.S."
+  },
+  "CELRC":
+  {
+    "Department": "School of Education",
+    "CIP Codes": "130101",
+    "Curriculum/Major": "Education",
+    "Curriculum Code": "CELRC",
+    "Degree": "Ed.S."
+  },
+  "AEDAF":
+  {
+    "Department": "School of Education",
+    "CIP Codes": "130101",
+    "Curriculum/Major": "Education",
+    "Curriculum Code": "AEDAF",
+    "Degree": "M.A."
+  },
+  "ECIEL":
+  {
+    "Department": "School of Education",
+    "CIP Codes": "130101",
+    "Curriculum/Major": "Education",
+    "Curriculum Code": "ECIEL",
+    "Degree": "M.Ed."
+  },
+  "EELRC":
+  {
+    "Department": "School of Education",
+    "CIP Codes": "130101",
+    "Curriculum/Major": "Education",
+    "Curriculum Code": "EELRC",
+    "Degree": "M.Ed."
+  },
+  "ELDR":
+  {
+    "Department": "School of Education",
+    "CIP Codes": "130401",
+    "Curriculum/Major": "Educational Leadership",
+    "Curriculum Code": "ELDR",
+    "Degree": "M.Ed."
+  },
+  "ETEC":
+  {
+    "Department": "School of Education",
+    "CIP Codes": "139999",
+    "Curriculum/Major": "Educational Technology Leadership",
+    "Curriculum Code": "ETEC",
+    "Degree": "M.Ed."
+  },
+  "PEDLR":
+  {
+    "Department": "School of Education",
+    "CIP Codes": "139999",
+    "Curriculum/Major": "Educational Leadership & Research",
+    "Curriculum Code": "PEDLR",
+    "Degree": "Ph.D."
+  },
+  "MATE":
+  {
+    "Department": "School of Education",
+    "CIP Codes": "131202",
+    "Curriculum/Major": "Elementary Education Grades 1-5",
+    "Curriculum Code": "MATE",
+    "Degree": "M.A.T."
+  },
+  "EGFE":
+  {
+    "Department": "School of Education",
+    "CIP Codes": "131004",
+    "Curriculum/Major": "Gifted Education",
+    "Curriculum Code": "EGFE",
+    "Degree": "M.Ed."
+  },
+  "EGUID":
+  {
+    "Department": "School of Education",
+    "CIP Codes": "131101",
+    "Curriculum/Major": "Guidance",
+    "Curriculum Code": "EGUID",
+    "Degree": "M.Ed."
+  },
+  "ECOUN":
+  {
+    "Department": "School of Education",
+    "CIP Codes": "131101",
+    "Curriculum/Major": "Counseling",
+    "Curriculum Code": "ECOUN",
+    "Degree": "M.Ed."
+  },
+  "MATS":
+  {
+    "Department": "School of Education",
+    "CIP Codes": "131205",
+    "Curriculum/Major": "Secondary Education Grades 6-12",
+    "Curriculum Code": "MATS",
+    "Degree": "M.A.T."
+  },
+  "ESPE":
+  {
+    "Department": "School of Education",
+    "CIP Codes": "131001",
+    "Curriculum/Major": "Special Education",
+    "Curriculum Code": "ESPE",
+    "Degree": "M.Ed."
+  },
+  "SECON":
+  {
+    "Department": "Economics",
+    "CIP Codes": "450601",
+    "Curriculum/Major": "Economics",
+    "Curriculum Code": "SECON",
+    "Degree": "M.S."
+  },
+  "PECON":
+  {
+    "Department": "Economics",
+    "CIP Codes": "450601",
+    "Curriculum/Major": "Economics",
+    "Curriculum Code": "PECON",
+    "Degree": "Ph.D."
+  },
+  "MEE":
+  {
+    "Department": "Electrical & Computer Engineering",
+    "CIP Codes": "141001",
+    "Curriculum/Major": "Electrical Engineering",
+    "Curriculum Code": "MEE",
+    "Degree": "M.S.E.E."
+  },
+  "PEE":
+  {
+    "Department": "Electrical & Computer Engineering",
+    "CIP Codes": "141001",
+    "Curriculum/Major": "Electrical Engineering",
+    "Curriculum Code": "PEE",
+    "Degree": "Ph.D."
+  },
+  "MES":
+  {
+    "Department": "Engineering-Interdepartmental Program",
+    "CIP Codes": "141301",
+    "Curriculum/Major": "Engineering Science",
+    "Curriculum Code": "MES",
+    "Degree": "M.S.E.S."
+  },
+  "PES":
+  {
+    "Department": "Engineering-Interdepartmental Program",
+    "CIP Codes": "141301",
+    "Curriculum/Major": "Engineering Science",
+    "Curriculum Code": "PES",
+    "Degree": "Ph.D."
+  },
+  "SDMAE":
+  {
+    "Department": "Engineering-Intercollegiate Program",
+    "CIP Codes": "500102",
+    "Curriculum/Major": "Digital Media Arts & Engineering",
+    "Curriculum Code": "SDMAE",
+    "Degree": "M..DMAE."
+  },
+  "MFACW":
+  {
+    "Department": "English",
+    "CIP Codes": "231302",
+    "Curriculum/Major": "Creative Writing",
+    "Curriculum Code": "MFACW",
+    "Degree": "M.F.A"
+  },
+  "AENGL":
+  {
+    "Department": "English",
+    "CIP Codes": "230101",
+    "Curriculum/Major": "English",
+    "Curriculum Code": "AENGL",
+    "Degree": "M.A."
+  },
+  "PENGL":
+  {
+    "Department": "English",
+    "CIP Codes": "230101",
+    "Curriculum/Major": "English",
+    "Curriculum Code": "PENGL",
+    "Degree": "Ph.D."
+  },
+  "SENTM":
+  {
+    "Department": "Entomology",
+    "CIP Codes": "260702",
+    "Curriculum/Major": "Entomology",
+    "Curriculum Code": "SENTM",
+    "Degree": "M.S."
+  },
+  "PENTM":
+  {
+    "Department": "Entomology",
+    "CIP Codes": "260702",
+    "Curriculum/Major": "Entomology",
+    "Curriculum Code": "PENTM",
+    "Degree": "Ph.D."
+  },
+  "SENVS":
+  {
+    "Department": "Environmental Sciences",
+    "CIP Codes": "30104",
+    "Curriculum/Major": "Environmental Sciences",
+    "Curriculum Code": "SENVS",
+    "Degree": "M.S."
+  },
+  "PENVS":
+  {
+    "Department": "Environmental Sciences",
+    "CIP Codes": "30104",
+    "Curriculum/Major": "Environmental Sciences",
+    "Curriculum Code": "PENVS",
+    "Degree": "Ph.D."
+  },
+  "MAPST":
+  {
+    "Department": "Experimental Statistics",
+    "CIP Codes": "270501",
+    "Curriculum/Major": "Applied Statistics",
+    "Curriculum Code": "MAPST",
+    "Degree": "M.Ap.St."
+  },
+  "SFIN":
+  {
+    "Department": "Finance",
+    "CIP Codes": "520801",
+    "Curriculum/Major": "Finance",
+    "Curriculum Code": "SFIN",
+    "Degree": "M.S."
+  },
+  "PFIN":
+  {
+    "Department": "Finance",
+    "CIP Codes": "520801",
+    "Curriculum/Major": "Finance",
+    "Curriculum Code": "PFIN",
+    "Degree": "Ph.D."
+  },
+  "SFDSC":
+  {
+    "Department": "Food Science",
+    "CIP Codes": "11001",
+    "Curriculum/Major": "Food Science",
+    "Curriculum Code": "SFDSC",
+    "Degree": "M.S."
+  },
+  "PFDSC":
+  {
+    "Department": "Food Science",
+    "CIP Codes": "11001",
+    "Curriculum/Major": "Food Science",
+    "Curriculum Code": "PFDSC",
+    "Degree": "Ph.D."
+  },
+  "AHISP":
+  {
+    "Department": "Foreign Languages & Literatures",
+    "CIP Codes": "160905",
+    "Curriculum/Major": "Hispanic Studies",
+    "Curriculum Code": "AHISP",
+    "Degree": "M.A."
+  },
+  "ASPAN":
+  {
+    "Department": "Foreign Languages & Literatures",
+    "CIP Codes": "160905",
+    "Curriculum/Major": "Spanish",
+    "Curriculum Code": "ASPAN",
+    "Degree": "M.A."
+  },
+  "AFREN":
+  {
+    "Department": "French Studies",
+    "CIP Codes": "160901",
+    "Curriculum/Major": "French",
+    "Curriculum Code": "AFREN",
+    "Degree": "M.A."
+  },
+  "PFREN":
+  {
+    "Department": "French Studies",
+    "CIP Codes": "160901",
+    "Curriculum/Major": "French",
+    "Curriculum Code": "PFREN",
+    "Degree": "Ph.D."
+  },
+  "AANTH":
+  {
+    "Department": "Geography & Anthropology",
+    "CIP Codes": "450201",
+    "Curriculum/Major": "Anthropology",
+    "Curriculum Code": "AANTH",
+    "Degree": "M.A."
+  },
+  "SGEOG":
+  {
+    "Department": "Geography & Anthropology",
+    "CIP Codes": "450701",
+    "Curriculum/Major": "Geography",
+    "Curriculum Code": "SGEOG",
+    "Degree": "M.S."
+  },
+  "PGA":
+  {
+    "Department": "Geography & Anthropology",
+    "CIP Codes": "450701",
+    "Curriculum/Major": "Geography and Anthropology",
+    "Curriculum Code": "PGA",
+    "Degree": "Ph.D."
+  },
+  "PGEOG":
+  {
+    "Department": "Geography & Anthropology",
+    "CIP Codes": "450701",
+    "Curriculum/Major": "Geography",
+    "Curriculum Code": "PGEOG",
+    "Degree": "Ph.D."
+  },
+  "AGEOG":
+  {
+    "Department": "Geography & Anthropology",
+    "CIP Codes": "450701",
+    "Curriculum/Major": "Geography",
+    "Curriculum Code": "AGEOG",
+    "Degree": "M.A."
+  },
+  "SGEOL":
+  {
+    "Department": "Geology & Geophysics",
+    "CIP Codes": "400601",
+    "Curriculum/Major": "Geology",
+    "Curriculum Code": "SGEOL",
+    "Degree": "M.S."
+  },
+  "PGEOL":
+  {
+    "Department": "Geology & Geophysics",
+    "CIP Codes": "400601",
+    "Curriculum/Major": "Geology",
+    "Curriculum Code": "PGEOL",
+    "Degree": "Ph.D."
+  },
+  "AHIST":
+  {
+    "Department": "History",
+    "CIP Codes": "540101",
+    "Curriculum/Major": "History",
+    "Curriculum Code": "AHIST",
+    "Degree": "M.A."
+  },
+  "PHIST":
+  {
+    "Department": "History",
+    "CIP Codes": "540101",
+    "Curriculum/Major": "History",
+    "Curriculum Code": "PHIST",
+    "Degree": "Ph.D."
+  },
+  "SHORT":
+  {
+    "Department": "School of Plant, Environmental, and Soil Sciences",
+    "CIP Codes": "11103",
+    "Curriculum/Major": "Horticulture",
+    "Curriculum Code": "SHORT",
+    "Degree": "M.S."
+  },
+  "PHORT":
+  {
+    "Department": "School of Plant, Environmental, and Soil Sciences",
+    "CIP Codes": "11103",
+    "Curriculum/Major": "Horticulture",
+    "Curriculum Code": "PHORT",
+    "Degree": "Ph.D."
+  },
+  "STAM":
+  {
+    "Department": "Human Ecology",
+    "CIP Codes": "190901",
+    "Curriculum/Major": "Textiles, Apparel & Merchandising",
+    "Curriculum Code": "STAM",
+    "Degree": "M.S."
+  },
+  "PTAM":
+  {
+    "Department": "Human Ecology",
+    "CIP Codes": "190901",
+    "Curriculum/Major": "Textiles, Apparel & Merchandising",
+    "Curriculum Code": "PTAM",
+    "Degree": "Ph.D."
+  },
+  "SHUEC":
+  {
+    "Department": "Human Ecology",
+    "CIP Codes": "190101",
+    "Curriculum/Major": "Human Ecology",
+    "Curriculum Code": "SHUEC",
+    "Degree": "M.S."
+  },
+  "PHUEC":
+  {
+    "Department": "Human Ecology",
+    "CIP Codes": "190101",
+    "Curriculum/Major": "Human Ecology",
+    "Curriculum Code": "PHUEC",
+    "Degree": "Ph.D."
+  },
+  "SHRE":
+  {
+    "Department": "School of Human Resource Education & Workforce Development",
+    "CIP Codes": "131201",
+    "Curriculum/Major": "Human Resource Education",
+    "Curriculum Code": "SHRE",
+    "Degree": "M.S."
+  },
+  "PHRE":
+  {
+    "Department": "School of Human Resource Education & Workforce Development",
+    "CIP Codes": "131201",
+    "Curriculum/Major": "Human Resource Education",
+    "Curriculum Code": "PHRE",
+    "Degree": "Ph.D."
+  },
+  "SVED":
+  {
+    "Department": "School of Human Resource Education & Workforce Development",
+    "CIP Codes": "131399",
+    "Curriculum/Major": "Vocational Education",
+    "Curriculum Code": "SVED",
+    "Degree": "M.S."
+  },
+  "PVED":
+  {
+    "Department": "School of Human Resource Education & Workforce Development",
+    "CIP Codes": "131399",
+    "Curriculum/Major": "Vocational Education",
+    "Curriculum Code": "PVED",
+    "Degree": "Ph.D."
+  },
+  "MAH":
+  {
+    "Department": "Humanities, Interdepartmental",
+    "CIP Codes": "240103",
+    "Curriculum/Major": "Humanities",
+    "Curriculum Code": "MAH",
+    "Degree": "M.A.H."
+  },
+  "MIE":
+  {
+    "Department": "Industrial Engineering",
+    "CIP Codes": "143501",
+    "Curriculum/Major": "Industrial Engineering",
+    "Curriculum Code": "MIE",
+    "Degree": "M.S.I.E."
+  },
+  "SISDS":
+  {
+    "Department": "Information Systems & Decision Sciences",
+    "CIP Codes": "521301",
+    "Curriculum/Major": "Analytics",
+    "Curriculum Code": "SISDS",
+    "Degree": "M.S."
+  },
+  "SKIN":
+  {
+    "Department": "Kinesiology",
+    "CIP Codes": "131314",
+    "Curriculum/Major": "Kinesiology",
+    "Curriculum Code": "SKIN",
+    "Degree": "M.S."
+  },
+  "PKIN":
+  {
+    "Department": "Kinesiology",
+    "CIP Codes": "131314",
+    "Curriculum/Major": "Kinesiology",
+    "Curriculum Code": "PKIN",
+    "Degree": "Ph.D."
+  },
+  "MLA":
+  {
+    "Department": "Landscape Architecture",
+    "CIP Codes": "40601",
+    "Curriculum/Major": "Landscape Architecture",
+    "Curriculum Code": "MLA",
+    "Degree": "M.L.A."
+  },
+  "MALA":
+  {
+    "Department": "Liberal Arts",
+    "CIP Codes": "240101",
+    "Curriculum/Major": "Liberal Arts",
+    "Curriculum Code": "MALA",
+    "Degree": "M.A.L.A."
+  },
+  "MLIS":
+  {
+    "Department": "Library & Information Science",
+    "CIP Codes": "250101",
+    "Curriculum/Major": "Library & Information Science",
+    "Curriculum Code": "MLIS",
+    "Degree": "M.L.I.S."
+  },
+  "CLIS":
+  {
+    "Department": "Library & Information Science",
+    "CIP Codes": "250101",
+    "Curriculum/Major": "Library & Information Science",
+    "Curriculum Code": "CLIS",
+    "Degree": "C.A.S."
+  },
+  "LISP":
+  {
+    "Department": "Library & Information Science",
+    "CIP Codes": "250101",
+    "Curriculum/Major": "Library & Information Science",
+    "Curriculum Code": "LISP",
+    "Degree": "PMC"
+  },
+  "LSPMC":
+  {
+    "Department": "Library & Information Science",
+    "CIP Codes": "250101",
+    "Curriculum/Major": "Library & Information Science",
+    "Curriculum Code": "LSPMC",
+    "Degree": "PMC"
+  },
+  "ALING":
+  {
+    "Department": "Linguistics-Interdepartmental Program",
+    "CIP Codes": "160102",
+    "Curriculum/Major": "Linguistics",
+    "Curriculum Code": "ALING",
+    "Degree": "M.A."
+  },
+  "PLING":
+  {
+    "Department": "Linguistics-Interdepartmental Program",
+    "CIP Codes": "160102",
+    "Curriculum/Major": "Linguistics",
+    "Curriculum Code": "PLING",
+    "Degree": "Ph.D."
+  },
+  "SMGT":
+  {
+    "Department": "Management",
+    "CIP Codes": "520201",
+    "Curriculum/Major": "Management",
+    "Curriculum Code": "SMGT",
+    "Degree": "M.S."
+  },
+  "PMGT":
+  {
+    "Department": "Management",
+    "CIP Codes": "520201",
+    "Curriculum/Major": "Management",
+    "Curriculum Code": "PMGT",
+    "Degree": "Ph.D."
+  },
+  "SMKT":
+  {
+    "Department": "Marketing",
+    "CIP Codes": "521401",
+    "Curriculum/Major": "Marketing",
+    "Curriculum Code": "SMKT",
+    "Degree": "M.S."
+  },
+  "PMKT":
+  {
+    "Department": "Marketing",
+    "CIP Codes": "521401",
+    "Curriculum/Major": "Marketing",
+    "Curriculum Code": "PMKT",
+    "Degree": "Ph.D."
+  },
+  "MMC":
+  {
+    "Department": "Mass Communication",
+    "CIP Codes": "90102",
+    "Curriculum/Major": "Mass Communication",
+    "Curriculum Code": "MMC",
+    "Degree": "M.M.C."
+  },
+  "PMCPA":
+  {
+    "Department": "Mass Communication",
+    "CIP Codes": "90199",
+    "Curriculum/Major": "Mass Communication & Public Affairs",
+    "Curriculum Code": "PMCPA",
+    "Degree": "Ph.D."
+  },
+  "CMASI":
+  {
+    "Department": "Mathematics",
+    "CIP Codes": "270101",
+    "Curriculum/Major": "Mathematics for Advanced Secondary Institutions",
+    "Curriculum Code": "CMASI",
+    "Degree": "GCMASI"
+  },
+  "SMATH":
+  {
+    "Department": "Mathematics",
+    "CIP Codes": "270101",
+    "Curriculum/Major": "Mathematics",
+    "Curriculum Code": "SMATH",
+    "Degree": "M.S."
+  },
+  "PMATH":
+  {
+    "Department": "Mathematics",
+    "CIP Codes": "270101",
+    "Curriculum/Major": "Mathematics",
+    "Curriculum Code": "PMATH",
+    "Degree": "Ph.D."
+  },
+  "MME":
+  {
+    "Department": "Mechanical Engineering",
+    "CIP Codes": "141901",
+    "Curriculum/Major": "Mechanical Engineering",
+    "Curriculum Code": "MME",
+    "Degree": "M.S.M.E."
+  },
+  "PME":
+  {
+    "Department": "Mechanical Engineering",
+    "CIP Codes": "141901",
+    "Curriculum/Major": "Mechanical Engineering",
+    "Curriculum Code": "PME",
+    "Degree": "Ph.D."
+  },
+  "PMUSC":
+  {
+    "Department": "School of Music",
+    "CIP Codes": "500901",
+    "Curriculum/Major": "Music",
+    "Curriculum Code": "PMUSC",
+    "Degree": "Ph.D."
+  },
+  "MMUS":
+  {
+    "Department": "School of Music",
+    "CIP Codes": "500903",
+    "Curriculum/Major": "Music",
+    "Curriculum Code": "MMUS",
+    "Degree": "M.M."
+  },
+  "DMUS":
+  {
+    "Department": "School of Music",
+    "CIP Codes": "500903",
+    "Curriculum/Major": "Music",
+    "Curriculum Code": "DMUS",
+    "Degree": "D.M.A."
+  },
+  "PMUS":
+  {
+    "Department": "School of Music",
+    "CIP Codes": "500905",
+    "Curriculum/Major": "Musicology",
+    "Curriculum Code": "PMUS",
+    "Degree": "Ph.D."
+  },
+  "PMUED":
+  {
+    "Department": "School of Music",
+    "CIP Codes": "131312",
+    "Curriculum/Major": "Music Education",
+    "Curriculum Code": "PMUED",
+    "Degree": "Ph.D."
+  },
+  "MNS":
+  {
+    "Department": "Natural Sciences-Interdepartmental Studies",
+    "CIP Codes": "300101",
+    "Curriculum/Major": "Natural Sciences",
+    "Curriculum Code": "MNS",
+    "Degree": "M.N.S."
+  },
+  "SNFS":
+  {
+    "Department": "Nutrition and Food Sciences, School of",
+    "CIP Codes": "11001",
+    "Curriculum/Major": "Nutrition and Food Sciences",
+    "Curriculum Code": "SNFS",
+    "Degree": "M.S."
+  },
+  "PNFS":
+  {
+    "Department": "Nutrition and Food Sciences, School of",
+    "CIP Codes": "11001",
+    "Curriculum/Major": "Nutrition and Food Sciences",
+    "Curriculum Code": "PNFS",
+    "Degree": "Ph.D."
+  },
+  "SOCS":
+  {
+    "Department": "Oceanography and Coastal Sciences",
+    "CIP Codes": "400607",
+    "Curriculum/Major": "Oceanography & Coastal Sciences",
+    "Curriculum Code": "SOCS",
+    "Degree": "M.S."
+  },
+  "POCS":
+  {
+    "Department": "Oceanography and Coastal Sciences",
+    "CIP Codes": "400607",
+    "Curriculum/Major": "Oceanography & Coastal Sciences",
+    "Curriculum Code": "POCS",
+    "Degree": "Ph.D."
+  },
+  "MPETE":
+  {
+    "Department": "Petroleum Engineering, Craft & Hawkins Department of",
+    "CIP Codes": "142501",
+    "Curriculum/Major": "Petroleum Engineering",
+    "Curriculum Code": "MPETE",
+    "Degree": "M.S.P.E."
+  },
+  "PPETE":
+  {
+    "Department": "Petroleum Engineering, Craft & Hawkins Department of",
+    "CIP Codes": "142501",
+    "Curriculum/Major": "Petroleum Engineering",
+    "Curriculum Code": "PPETE",
+    "Degree": "Ph.D."
+  },
+  "APHIL":
+  {
+    "Department": "Philosophy & Religious Studies",
+    "CIP Codes": "380101",
+    "Curriculum/Major": "Philosophy",
+    "Curriculum Code": "APHIL",
+    "Degree": "M.A."
+  },
+  "SMPHP":
+  {
+    "Department": "Physics & Astronomy",
+    "CIP Codes": "512205",
+    "Curriculum/Major": "Medical Physics & Health Physics",
+    "Curriculum Code": "SMPHP",
+    "Degree": "M.S."
+  },
+  "SPHYS":
+  {
+    "Department": "Physics & Astronomy",
+    "CIP Codes": "400801",
+    "Curriculum/Major": "Physics",
+    "Curriculum Code": "SPHYS",
+    "Degree": "M.S."
+  },
+  "PPHYS":
+  {
+    "Department": "Physics & Astronomy",
+    "CIP Codes": "400801",
+    "Curriculum/Major": "Physics",
+    "Curriculum Code": "PPHYS",
+    "Degree": "Ph.D."
+  },
+  "PDCMP":
+  {
+    "Department": "Physics & Astronomy",
+    "CIP Codes": "400801",
+    "Curriculum/Major": "Medical Physics",
+    "Curriculum Code": "PDCMP",
+    "Degree": "P.D.C."
+  },
+  "SNSEN":
+  {
+    "Department": "Physics & Astronomy",
+    "CIP Codes": "142301",
+    "Curriculum/Major": "Nuclear Science & Engineering",
+    "Curriculum Code": "SNSEN",
+    "Degree": "M.S."
+  },
+  "SPESS":
+  {
+    "Department": "School of Plant, Environmental Management & Soil Sciences",
+    "CIP Codes": "10308",
+    "Curriculum/Major": "Plant, Environmental Management & Soil Sciences",
+    "Curriculum Code": "SPESS",
+    "Degree": "M.S."
+  },
+  "PPESS":
+  {
+    "Department": "School of Plant, Environmental Management & Soil Sciences",
+    "CIP Codes": "10308",
+    "Curriculum/Major": "Plant, Environmental Management & Soil Sciences",
+    "Curriculum Code": "PPESS",
+    "Degree": "Ph.D."
+  },
+  "SPPCP":
+  {
+    "Department": "Plant Pathology & Crop Physiology",
+    "CIP Codes": "260305",
+    "Curriculum/Major": "Plant Pathology & Crop Physiology",
+    "Curriculum Code": "SPPCP",
+    "Degree": "M.S."
+  },
+  "PPPCP":
+  {
+    "Department": "Plant Pathology & Crop Physiology",
+    "CIP Codes": "260305",
+    "Curriculum/Major": "Plant Pathology & Crop Physiology",
+    "Curriculum Code": "PPPCP",
+    "Degree": "Ph.D."
+  },
+  "SPLHL":
+  {
+    "Department": "Plant Pathology & Crop Physiology",
+    "CIP Codes": "260305",
+    "Curriculum/Major": "Plant Health",
+    "Curriculum Code": "SPLHL",
+    "Degree": "M.S."
+  },
+  "PPLHL":
+  {
+    "Department": "Plant Pathology & Crop Physiology",
+    "CIP Codes": "260305",
+    "Curriculum/Major": "Plant Health",
+    "Curriculum Code": "PPLHL",
+    "Degree": "Ph.D."
+  },
+  "APOLI":
+  {
+    "Department": "Political Science",
+    "CIP Codes": "451001",
+    "Curriculum/Major": "Political Science",
+    "Curriculum Code": "APOLI",
+    "Degree": "M.A."
+  },
+  "PPOLI":
+  {
+    "Department": "Political Science",
+    "CIP Codes": "451001",
+    "Curriculum/Major": "Political Science",
+    "Curriculum Code": "PPOLI",
+    "Degree": "Ph.D."
+  },
+  "APSYC":
+  {
+    "Department": "Psychology",
+    "CIP Codes": "420101",
+    "Curriculum/Major": "Psychology",
+    "Curriculum Code": "APSYC",
+    "Degree": "M.A."
+  },
+  "PPSYC":
+  {
+    "Department": "Psychology",
+    "CIP Codes": "420101",
+    "Curriculum/Major": "Psychology",
+    "Curriculum Code": "PPSYC",
+    "Degree": "Ph.D."
+  },
+  "MPADM":
+  {
+    "Department": "Public Administration Institute",
+    "CIP Codes": "440401",
+    "Curriculum/Major": "Public Administration",
+    "Curriculum Code": "MPADM",
+    "Degree": "M.P.A."
+  },
+  "SRNR":
+  {
+    "Department": "Renewable Natural Resources",
+    "CIP Codes": "30101",
+    "Curriculum/Major": "Renewable Natural Resources",
+    "Curriculum Code": "SRNR",
+    "Degree": "M.S."
+  },
+  "SFISH":
+  {
+    "Department": "Renewable Natural Resources",
+    "CIP Codes": "30101",
+    "Curriculum/Major": "Fisheries",
+    "Curriculum Code": "SFISH",
+    "Degree": "M.S."
+  },
+  "PRNR":
+  {
+    "Department": "Renewable Natural Resources",
+    "CIP Codes": "30101",
+    "Curriculum/Major": "Renewable Natural Resources",
+    "Curriculum Code": "PRNR",
+    "Degree": "Ph.D."
+  },
+  "SFOR":
+  {
+    "Department": "Renewable Natural Resources",
+    "CIP Codes": "30501",
+    "Curriculum/Major": "Forestry",
+    "Curriculum Code": "SFOR",
+    "Degree": "M.S."
+  },
+  "PFOR":
+  {
+    "Department": "Renewable Natural Resources",
+    "CIP Codes": "30501",
+    "Curriculum/Major": "Forestry",
+    "Curriculum Code": "PFOR",
+    "Degree": "Ph.D."
+  },
+  "SWILD":
+  {
+    "Department": "Renewable Natural Resources",
+    "CIP Codes": "30601",
+    "Curriculum/Major": "Wildlife",
+    "Curriculum Code": "SWILD",
+    "Degree": "M.S."
+  },
+  "PWFS":
+  {
+    "Department": "Renewable Natural Resources",
+    "CIP Codes": "30601",
+    "Curriculum/Major": "Wildlife & Fisheries Science",
+    "Curriculum Code": "PWFS",
+    "Degree": "Ph.D."
+  },
+  "MSW":
+  {
+    "Department": "Social Work",
+    "CIP Codes": "440701",
+    "Curriculum/Major": "Social Work",
+    "Curriculum Code": "MSW",
+    "Degree": "M.S.W."
+  },
+  "PSW":
+  {
+    "Department": "Social Work",
+    "CIP Codes": "440701",
+    "Curriculum/Major": "Social Work",
+    "Curriculum Code": "PSW",
+    "Degree": "Ph.D."
+  },
+  "ASOCL":
+  {
+    "Department": "Sociology",
+    "CIP Codes": "451101",
+    "Curriculum/Major": "Sociology",
+    "Curriculum Code": "ASOCL",
+    "Degree": "M.A."
+  },
+  "PSOCL":
+  {
+    "Department": "Sociology",
+    "CIP Codes": "451101",
+    "Curriculum/Major": "Sociology",
+    "Curriculum Code": "PSOCL",
+    "Degree": "Ph.D."
+  },
+  "ASPCM":
+  {
+    "Department": "Speech Communication",
+    "CIP Codes": "231001",
+    "Curriculum/Major": "Speech Communication",
+    "Curriculum Code": "ASPCM",
+    "Degree": "M.A."
+  },
+  "PSPCM":
+  {
+    "Department": "Speech Communication",
+    "CIP Codes": "231001",
+    "Curriculum/Major": "Speech Communication",
+    "Curriculum Code": "PSPCM",
+    "Degree": "Ph.D."
+  },
+  "MFATH":
+  {
+    "Department": "Theatre",
+    "CIP Codes": "500501",
+    "Curriculum/Major": "Theatre",
+    "Curriculum Code": "MFATH",
+    "Degree": "M.F.A"
+  },
+  "PTHTR":
+  {
+    "Department": "Theatre",
+    "CIP Codes": "500501",
+    "Curriculum/Major": "Theatre",
+    "Curriculum Code": "PTHTR",
+    "Degree": "Ph.D."
+  },
+  "ATHTR":
+  {
+    "Department": "Theatre",
+    "CIP Codes": "500501",
+    "Curriculum/Major": "Theatre",
+    "Curriculum Code": "ATHTR",
+    "Degree": "M.A."
+  }
+}
