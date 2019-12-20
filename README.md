@@ -65,17 +65,17 @@ scan a TigerCard to check a patron's library permissions
 - to build a production instance:
 
   - with CentOS 7
-  - ```sudo yum install httpd python3 mod_wsgi python3-devel
-  - sudo pip3 install flask requests
-  - cd /var/www/
-  - sudo git clone https://github.com/lsulibraries/LibraryBouncer
+  - ```sudo yum install httpd python3 mod_wsgi python3-devel```
+  - ```sudo pip3 install flask requests```
+  - ```cd /var/www/```
+  - ```sudo git clone https://github.com/lsulibraries/LibraryBouncer```
   - copy or symlink /var/www/LibraryBouncer/config/apache/librarybouncer.conf to /etc/httpd/conf.d/librarybouncer.conf
-  - create a file at ./BouncerAPI/user_pass.json with permissions -rw-------
-  - create a file at ./BouncerAPI/access_stats.txt
-  - sudo chown -R garmstrong:apache /var/www/LibraryBouncer
-  - sudo firewall-cmd --zone=public --permanent --add-service=http
-  - sudo firewall-cmd --zone=public --permanent --add-service=https
-  - sudo systemctl restart httpd```
+  - create a file at ./BouncerAPI/user_pass.json with permissions -rw------- holding a Sirsi User/Password
+  - ```touch /var/www/LibraryBouncer/BouncerAPI/access_stats.txt```
+  - ```sudo chown -R garmstrong:apache /var/www/LibraryBouncer```
+  - ```sudo firewall-cmd --zone=public --permanent --add-service=http```
+  - ```sudo firewall-cmd --zone=public --permanent --add-service=https```
+  - ```sudo systemctl restart httpd```
   - disable selinux unless you want to figure out that madness
   - look in the apache logs & the access_stats.txt for error messages
 
