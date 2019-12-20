@@ -6,14 +6,13 @@ scan a TigerCard to check a patron's library permissions
 #### BouncerAPI
 
 - a secure server running within our local network (not available to the internet)
-- accepts a url in the form {url to server}/?id=1234567890123456
+- accepts a url in the form http://libguardshack.lsu.edu/expiration/?id=1234567890123456
 
   - where the number is a Tigercard id
-  - or an 89 number
 
 - returns a json response with that person's Symphony expiration date
 
-  - {"user": "Last, First Middle", "expiration": "yyyy-mm-dd"}
+  - {"expiration": "yyyy-mm-dd"}
 
 - big picture:
 
@@ -26,7 +25,7 @@ scan a TigerCard to check a patron's library permissions
   - So, while the server's port is accessible to anyone inside the lsu network, it only returns info we are comfortable sharing to everyone (including bad actors).
   - Later we will talk about an interface program that queries this server.
 
-- to build:
+- for dev:
 
   - follow the instructions at gnatty repo to install docker and github
   - clone this github repository
@@ -37,23 +36,39 @@ scan a TigerCard to check a patron's library permissions
     - where that user/password can log into Symphony to access Patron info
 
   - ```docker-compose up --build -d```
-  - the webserver will be available at url {local machine url}:8000
+  - the webserver will be available at url localhost:8000
   - in the docker-compose.yml file is a line "ports: 8000:80" where 8000 is the outside visible port and 80 is the port inside the container
 
-- to secure:
-
-  - after build, Delete the user_pass.json file
-  - the docker server will remember the Symphony user/pass
   - you may start and stop the API server with ```docker-compose up -d``` and ```docker-compose stop```
-  - though it will stay up & restart on failure, until you ```docker-compose stop```
+  - the docker constainers & the flask server will restart on failure, unless you ```docker-compose stop```
+  - it will log flask error in access_stats.txt
+  - it logs container-level errors in ```docker-compose logs```
   - ```docker-compose down``` will kill the containers and wipe the user/pass
+
+- for production:
+
+  - on a CentOS box
+  - clone this repo to /var/www/LibraryBouncer/
+  - copy the file /var/www/LibraryBouncer/config/apache/librarybouncer.conf to /etc/httpd/conf.d/librarybouncer.conf
+  - open the CentOS box to http & https
+  - ```sudo yum install httpd```
+  - ```sudo yum install python3-devel```
+  - ```sudo pip3 install flask```
+  - ```sudo pip3 install requests```
+  - ```sudo yum install mod_wsgi```
+  - ```sudo chown garmstrong:apache LibraryBouncer/```
+  - ```sudo chmod 0664 /var/www/LibraryBouncer/BouncerAPI/access_stats.txt```
+  - ```sudo semanage fcontext -a -t httpd_sys_rw_content_t "/var/www/LibraryBouncer(/.*)?" ```
+  - ```sudo systemctl restart httpd```
+  - ```sudo firewall-cmd --zone=public --permanent --add-service=http```
+  - ```sudo firewall-cmd --zone=public --permanent --add-service=https```
+  - ```sudo firewall-cmd --reload```
 
 - to revise the server:
 
   - the entire server is coded in the app.py file.
   - it's a very minimal Flask server (python3)
-  - if you add elements to the server json response, be sure to add a matching element to the ActiveStudent.go program
-
+  - Note: if you add elements to the server json response, be sure to add a matching element to the ActiveStudent.go program.  Go is very strict about types.
 
 #### BouncerInterface
 
@@ -81,4 +96,5 @@ scan a TigerCard to check a patron's library permissions
   - edit ActiveCard.go
   - for Windows: ```go build ActiveCard.go```
   - for linux: ```GOOS=windows GOARCH=amd64 go build ActiveCard.go```
-  - the new ActiveCard.exe file in ./BouncerInterface/ is a windows executable.
+  - the new ActiveCard.exe file in ./BouncerInterface folder is a windows executable.
+  - replace the ActiveCard.exe file on the front desk Windows computer's Desktop with this new version

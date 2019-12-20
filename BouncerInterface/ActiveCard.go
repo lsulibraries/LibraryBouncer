@@ -22,7 +22,7 @@ type userinfo struct {
 }
 
 func QueryAPI(uid string) userinfo {
-	url := "http://localhost:8000/?id=" + uid
+	url := "http://libguardshack.lsu.edu/expiration/?id=" + uid
 	resp, err := http.Get(url)
 	defer resp.Body.Close()
 	if err != nil {
