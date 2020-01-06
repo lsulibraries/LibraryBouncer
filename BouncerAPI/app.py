@@ -30,10 +30,14 @@ def parse_secrets():
 
 
 def login(username, password):
-    endpoint = f"https://lalu.sirsi.net/lalu_ilsws/rest/security/loginUser?clientID=DS_CLIENT&login={username}&password={password}&json=True"
+    endpoint = f"https://lalu.sirsi.net/lalu_ilsws/rest/security/loginUser?clientID=DS_CLIENT&json=True"
+    params = {
+        "login": username,
+        "password": password
+    }
     s = requests.session()
-    r = s.post(endpoint)
-    return s, json.loads(r.text)["sessionToken"]
+    r = s.post(endpoint, params=params)
+    return s, json.loads(r.content)["sessionToken"]
 
 
 def get_userinfo(session, session_token, userid):
