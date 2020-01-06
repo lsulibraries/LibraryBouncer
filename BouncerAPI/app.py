@@ -31,10 +31,7 @@ def parse_secrets():
 
 def login(username, password):
     endpoint = f"https://lalu.sirsi.net/lalu_ilsws/rest/security/loginUser?clientID=DS_CLIENT&json=True"
-    params = {
-        "login": username,
-        "password": password
-    }
+    params = {"login": username, "password": password}
     s = requests.session()
     r = s.post(endpoint, params=params)
     return s, json.loads(r.content)["sessionToken"]
@@ -51,8 +48,9 @@ def get_userinfo(session, session_token, userid):
         userinfo = selectively_update(userinfo)
         return userinfo
 
-    endpoint = f"https://lalu.sirsi.net/lalu_ilsws/rest/patron/lookupPatronInfo?clientID=DS_CLIENT&sessionToken={session_token}&userID={userid}&includePatronStatusInfo=True&includePatronInfo=True&json=True"
-    response = session.post(endpoint)
+    endpoint = f"https://lalu.sirsi.net/lalu_ilsws/rest/patron/lookupPatronInfo?clientID=DS_CLIENT&includePatronStatusInfo=True&includePatronInfo=True&json=True"
+    params = {"userID": userid, "sessionToken": session_token}
+    response = session.post(endpoint, params=params)
     userinfo = parse_response(response)
 
     if userinfo["Curriculum Code"] not in DEGREE_ATTRIBUTES:
@@ -60,7 +58,7 @@ def get_userinfo(session, session_token, userid):
         This branch is for a partial miss.
         We got some response from Sirsi, but the response has a value that doesn't match anything in the enrichment dataset.
         Either Sirsi gave us an "Unknown Dept" null response,
-        or Sirsi gave us a valid dept that happends to not be in the DEGREE_ATTRIBUTES enrichment dataset.
+        or Sirsi gave us a valid dept that happens to not be in the DEGREE_ATTRIBUTES enrichment dataset.
         We'll fill in the missing fields, so the logger doesn't choke.
         """
         userinfo = selectively_update(userinfo)
@@ -96,6 +94,8 @@ def selectively_update(userinfo):
 
 def parse_response(r):
     info = json.loads(r.text)
+    # the following syntax saves so much space, that I'll risk the added complexity
+    # It gets the nested key's value, or else returns a default value.
     # the first .get() returns empty dict if key not found
     # the second .get() returns descriptive text for each missing type
     exp = info.get("patronStatusInfo", dict()).get("datePrivilegeExpires", "1900-01-01")
