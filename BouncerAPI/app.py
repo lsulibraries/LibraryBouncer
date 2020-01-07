@@ -11,7 +11,6 @@ RECENTS = list()
 with open("DegreeAttributes.json", "r") as f:
     DEGREE_ATTRIBUTES = json.load(f)
 
-
 application = Flask(__name__)
 
 
@@ -29,53 +28,77 @@ def parse_secrets():
     return info["user"], info["password"]
 
 
+def post_request(service, command, payload):
+    url = f"https://lalu.sirsi.net/lalu_ilsws/rest/{service}/{command}"
+    response = requests.post(url, data=payload)
+    return response
+
+
 def login(username, password):
-    endpoint = f"https://lalu.sirsi.net/lalu_ilsws/rest/security/loginUser?clientID=DS_CLIENT&json=True"
-    params = {"login": username, "password": password}
-    s = requests.session()
-    r = s.post(endpoint, params=params)
-    return s, json.loads(r.content)["sessionToken"]
+    service = "security"
+    command = "loginUser"
+    payload = {
+        "login": username,
+        "password": password,
+        "clientID": "DS_CLIENT",
+        "json": True,
+    }
+    r = post_request(service=service, command=command, payload=payload)
+    return json.loads(r.content)["sessionToken"]
 
 
-def get_userinfo(session, session_token, userid):
+def lookup_patron(userid, token):
+    service = "patron"
+    command = "lookupPatronInfo"
+    payload = {
+        "userID": userid,
+        "sessionToken": token,
+        "clientID": "DS_CLIENT",
+        "json": True,
+        "includePatronInfo": True,
+        "includePatronStatusInfo": True,
+    }
+    r = post_request(service=service, command=command, payload=payload)
+    return r
+
+
+def get_userinfo(token, userid):
+
+    # This branch is for a complete miss.  Short-circuit.
+    # The ID could not possibly match something in Sirsi.
+    # Return a dict filled with default values, so the logger doesn't choke.
     if not (userid and len(userid) == 17):
-        """
-        This branch is for a complete miss.
-        The ID could not possibly match something in Sirsi.
-        We'll create a dict filled with default fields, so the logger doesn't choke.
-        """
         userinfo = dict()
-        userinfo = selectively_update(userinfo)
+        userinfo = add_missing_fields(userinfo)
         return userinfo
 
-    endpoint = f"https://lalu.sirsi.net/lalu_ilsws/rest/patron/lookupPatronInfo?clientID=DS_CLIENT&includePatronStatusInfo=True&includePatronInfo=True&json=True"
-    params = {"userID": userid, "sessionToken": session_token}
-    response = session.post(endpoint, params=params)
+    response = lookup_patron(userid, token)
     userinfo = parse_response(response)
 
+    # This branch is for a partial miss.
+    # We got a response from Sirsi, but the response has a value that doesn't match anything in the enrichment dataset.
+    # Either Sirsi gave us an "Unknown Dept" null response,
+    # or Sirsi gave us a valid dept that happens to not be in the DEGREE_ATTRIBUTES enrichment dataset.
+    # We'll fill in the missing values, so the logger doesn't choke.
     if userinfo["Curriculum Code"] not in DEGREE_ATTRIBUTES:
-        """
-        This branch is for a partial miss.
-        We got some response from Sirsi, but the response has a value that doesn't match anything in the enrichment dataset.
-        Either Sirsi gave us an "Unknown Dept" null response,
-        or Sirsi gave us a valid dept that happens to not be in the DEGREE_ATTRIBUTES enrichment dataset.
-        We'll fill in the missing fields, so the logger doesn't choke.
-        """
-        userinfo = selectively_update(userinfo)
+        userinfo = add_missing_fields(userinfo)
         return userinfo
 
+    # This branch is for a complete hit.
     else:
-        additional = DEGREE_ATTRIBUTES[userinfo["Curriculum Code"]]
-        userinfo.update(additional)
+        enrichment = DEGREE_ATTRIBUTES[userinfo["Curriculum Code"]]
+        userinfo.update(enrichment)
+
+        # There remains an edge case in the enrichment dataset.
+        # Grad school & professional schools have no "College" assigned, so
+        # we assign to them a generic "Graduate or Professional" value for College
         if not userinfo.get("College"):
-            # This fixes an edge case in the enrichment dataset.
-            # Grad school & professional schools have no "College" assigned, so
-            # we assign to them a generic "Graduate or Professional" value for College
             userinfo["College"] = "Graduate or Professional"
+
         return userinfo
 
 
-def selectively_update(userinfo):
+def add_missing_fields(userinfo):
     defaults = {
         "College": "Unknown College",
         "Department": "Unknown Dept",
@@ -86,6 +109,7 @@ def selectively_update(userinfo):
         "Expiration": "1900-01-01",
         "user": "Unknown User",
     }
+    # for missing key/values, add defaults
     for k, v in defaults.items():
         if k not in userinfo:
             userinfo[k] = v
@@ -95,9 +119,10 @@ def selectively_update(userinfo):
 def parse_response(r):
     info = json.loads(r.text)
     # the following syntax saves so much space, that I'll risk the added complexity
-    # It gets the nested key's value, or else returns a default value.
-    # the first .get() returns empty dict if key not found
-    # the second .get() returns descriptive text for each missing type
+    # info is {key1: {key2: value}, etc}
+    # if key1 or key2 are missing, then it returns a default value
+    # An example, key1 is "patronStatusInfo" and key2 is "datePrivilegeExpires"
+    # The actual value returns if both keys exist, otherwise "1900-01-01" returns
     exp = info.get("patronStatusInfo", dict()).get("datePrivilegeExpires", "1900-01-01")
     dept = info.get("patronInfo", dict()).get("department", "Unknown Dept")
     user = info.get("patronInfo", dict()).get("displayName", "Unknown User")
@@ -146,12 +171,12 @@ def is_repeat(userinfo):
 @application.route("/")
 def index():
     username, password = parse_secrets()
-    session, session_token = login(username, password)
+    token = login(username, password)
     userid = request.args.get("id")
-    userinfo = get_userinfo(session, session_token, userid)
-    # We log a decent amount of non-identifiable info
+    userinfo = get_userinfo(token, userid)
+    # we log a bunch of non-identifiable info
     log_access(userinfo)
-    # But to defend against scraping from a 3rd party, we only expose "expiration" to the outside world.
+    # but we only expose "expiration" to the outside world
     displayed_userinfo = {"expiration": userinfo["Expiration"]}
     return jsonify(displayed_userinfo)
 
